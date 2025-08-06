@@ -7,6 +7,7 @@ import { ICategory } from '../../interfaces/ICategory/icategory';
   providedIn: 'root'
 })
 export class CategoriesService {
+  //  for category carousel display
 //  service for managing all categories
 
   private readonly url = `${environment.baseUrl}/categories`;
@@ -23,7 +24,7 @@ export class CategoriesService {
   getByName(name:string) {
     return this.http.get(`${this.url}/${name}`);
   }
-  
+
   addCategory(category: ICategory) {
     return this.http.post(this.url, category);
   }

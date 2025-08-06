@@ -4,32 +4,38 @@ import { environment } from '../../environments/environment';
 import { IProduct } from '../../interfaces/IProduct/iproduct';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AdminProductService {
-//  service for managing admin's selling products
+  //  for product table
+  //  service for managing admin's selling products
 
-  private readonly url = `${environment.baseUrl}/cart`;
-  constructor(private readonly http:HttpClient) { }
+  private readonly url = `${environment.baseUrl}/user`;
+  constructor(private readonly http: HttpClient) {}
 
-  getSellingProducts(userId:string){
+  getSellingProducts(userId: string) {
     return this.http.get(`${this.url}/${userId}/sellingProducts`);
   }
 
-  getById(productId:string,userId:string){
+  getSellingProductsById(productId: string, userId: string) {
     return this.http.get(`${this.url}/${userId}/sellingProducts/${productId}`);
   }
 
-  addProduct(product:IProduct,userId:string){
-    return this.http.post(`${this.url}/${userId}/sellingProducts`,product);
+  addSellingProduct(product: IProduct, userId: string) {
+    return this.http.post(`${this.url}/${userId}/sellingProducts`, product);
   }
 
-  deleteProduct(productId:string,userId:string){
-    return this.http.delete(`${this.url}/${userId}/sellingProducts/${productId}`);
+  deleteSellingProduct(productId: string, userId: string) {
+    return this.http.delete(
+      `${this.url}/${userId}/sellingProducts/${productId}`
+    );
   }
 
-  editProduct(product:IProduct,productId:string,userId:string){
+  editSellingProduct(product: IProduct, productId: string, userId: string) {
     product.id = productId;
-    return this.http.patch(`${this.url}/${userId}/sellingProducts/${productId}`,product);
+    return this.http.patch(
+      `${this.url}/${userId}/sellingProducts/${productId}`,
+      product
+    );
   }
 }

@@ -8,9 +8,9 @@ import { IProduct } from '../../interfaces/IProduct/iproduct';
 })
 export class ProductsService {
   // all website means all admins's products
-  // service to manage all website's product related operations
+  // service to display all website's product related operations
 
-  private readonly url = `${environment.baseUrl}/products`;
+  private readonly url = `${environment.baseUrl}/user/sellingProducts`;
   constructor(private readonly http:HttpClient) { }
 
   getAllProducts(){
@@ -19,14 +19,6 @@ export class ProductsService {
 
   getById(id:string){
     return this.http.get(`${this.url}/${id}`);
-  }
-
-  addProduct(product:IProduct){
-    return this.http.post(this.url,product);
-  }
-  
-  deleteProduct(id:string){
-    return this.http.delete(`${this.url}/${id}`);
   }
 
 }
