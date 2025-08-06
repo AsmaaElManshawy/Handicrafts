@@ -1,10 +1,3 @@
-
-
-.activeLink {
-  color: var(--fourth-color);
-}
-
-
 .navbar{
   background-color: var(--secondary-bg-color);
 }
@@ -18,11 +11,43 @@
 }
 
 .navbar {
---bs-navbar-padding-y:0rem
+    --bs-navbar-padding-y:1rem;
     --bs-navbar-color: var(--text-dark);
     --bs-navbar-hover-color: var(--fourth-color-hover);
     --bs-navbar-active-color: var(--fourth-color);
     --bs-navbar-brand-font-size: 2rem;
+    --bs-nav-link-font-size: 1.05em;
     --bs-navbar-brand-color: var(--fourth-color);
     --bs-navbar-brand-hover-color: var(--fourth-color-hover);
 }
+
+.navbar-transparent {
+  background-color: transparent !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  color: var(--text-light) !important;
+  transition: all 0.3s ease;
+}
+.collapse .navbar-nav{
+  gap:20px;
+}
+
+
+.activeLink {
+  color: var(--fourth-color);
+}
+
+.brand-transparent , .link-transparent{
+  color:var(--text-light) !important;
+}
+.link-transparent i{
+  color:var(--text-light) !important;
+}
+.dropdown .dropdown-toggle{
+  background-color: var(--fourth-color) !important;
+  border-radius: 5px;
+  padding: 8px 15px;
+}
+

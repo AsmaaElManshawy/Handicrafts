@@ -1,8 +1,15 @@
 :root {
-  --main-color: #bad9b6; /*Header & Footer with Light text */
+  --main-color: #bad8b6; /*Header & Footer with Light text */
   --second-color: #e1eacd; /*Cards and background of Card Details*/
   --third-color: #f9f6e6; /*Main Background of Website*/
   --fourth-color: #8d77ab; /*Buttons and hover with a slightly darker tone*/
+  --hoverr-color: rgb(119, 101, 148); /*Buttons and hover with a slightly darker tone*/
   --text-dark: #333;
   --text-light: #ffffff;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+

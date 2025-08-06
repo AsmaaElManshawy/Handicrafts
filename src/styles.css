@@ -1,10 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --main-bg-color: rgb(249, 246, 230);  /*Main Background of Website*/
-  --secondary-bg-color: rgb(186, 217, 182); /*Header & Footer with Light text */
-  --card-bg-color: rgb(225, 234, 205); /*Cards and background of Card Details*/
+  --main-bg-color: #f9f6e6;  /*Main Background of Website*/
+  --secondary-bg-color: #bad8b6; /*Header & Footer with Light text */
+  --card-bg-color: #e1eacd; /*Cards and background of Card Details*/
   --fourth-color: rgb(141, 119, 171); /*Buttons and hover with a slightly darker tone*/
-  --fourth-color-hover: rgba(141, 119, 171, 0.744); /*Buttons and hover with a slightly darker tone*/
+  --fourth-color-hover:rgb(119, 101, 148); /*Buttons and hover with a slightly darker tone*/
   --text-dark: rgb(51, 51, 51);
   --text-light: rgb(255, 255, 255);
+}
+body{
+  background-color: var(--main-bg-color);
 }
