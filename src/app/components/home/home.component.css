@@ -1,0 +1,97 @@
+/* Hero section */
+main .hero .carousel {
+  position: relative;
+}
+main .hero .carousel .opacity-layer {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.493);
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+}
+main .hero .carousel .carousel-inner .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+main .hero .carousel .crousel-cap {
+  position: absolute;
+  z-index: 100;
+  bottom: 15%;
+  left: 13%;
+  color: var(--text-light);
+  width: 40%;
+  flex-wrap: wrap;
+}
+main .hero .carousel .crousel-cap h1 {
+  font-size: 3.3em;
+  line-height: 1.4;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+main .hero .carousel .crousel-cap p {
+  font-size: 1.3em;
+  color: rgb(134, 134, 134);
+  width: 80%;
+  font-weight: 300;
+}
+main .hero .carousel .crousel-cap .btn {
+  margin: 10px 0;
+  background-color: var(--fourth-color) !important;
+  color: var(--text-light);
+  font-size: 1.04em;
+  font-weight: 400;
+  padding: 10px 23px !important;
+  box-shadow: 1px 1px 1px var(--fourth-color-hover);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+main .hero .carousel .crousel-cap .btn:hover {
+  background-color: var(--fourth-color-hover) !important;
+}
+
+.carousel-control-prev,
+.carousel-control-prev-icon,
+.carousel-control-next,
+.carousel-control-next-icon {
+  z-index: 100;
+}
+.carousel-control-prev {
+  padding-right: 50px;
+  padding-top: 20px;
+}
+.carousel-control-next {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+/* New arrivals */
+main .New-arrivals .top {
+  text-align: center;
+  color: var(--text-dark);
+  margin-top: 100px;
+}
+main .New-arrivals .top h1 {
+  text-transform: capitalize;
+  font-size: 3em;
+}
+main .New-arrivals .top p {
+  text-transform: capitalize;
+  color: rgb(134, 134, 134);
+  font-size: 1.09em;
+}
+
+.bottom{
+    margin-top: 60px;
+}
+.container {
+  --bs-gutter-x: 0!important;
+  padding-left: 0;
+  padding-right: 0;
+}
+.bottom .row{
+    --bs-gutter-x: 0.6em;
+    margin-right: calc(-.1 * var(--bs-gutter-x));
+    margin-left: calc(-.1 * var(--bs-gutter-x));
+}
