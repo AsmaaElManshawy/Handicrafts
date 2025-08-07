@@ -1,0 +1,93 @@
+.card {
+  display: block;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  color: inherit; /* علشان الكتابة تفضل بلونها الطبيعي */
+  text-decoration: none; /* يشيل underline */
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card:hover .card-img-top {
+  margin-top: -25px;
+  transform: translateY(-20px);
+}
+.card .card-img-top {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  height: 280px;
+  padding-bottom: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card .card-body {
+  bottom: 7%;
+  left: 0;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.card p {
+  text-transform: capitalize;
+  color: rgb(100, 100, 100);
+  font-size: 0.93em;
+}
+.card .title {
+  display: flex;
+  gap: 10px;
+}
+.card .title .seller {
+  color: rgb(128, 127, 127);
+  font-size: 0.8em;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+.card .category {
+  color: rgb(128, 127, 127);
+  font-size: 0.8em;
+  display: block;
+  margin-top: -3px;
+  margin-bottom: 13px;
+  text-transform: capitalize;
+}
+
+.card .title h5 {
+  text-transform: capitalize;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.card .card-body .card-price{
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #47724B;
+}
+.card .btn {
+  margin: 4px 0;
+  background-color: var(--fourth-color);
+  color: var(--text-light);
+  font-size: 1.02em;
+  font-weight: 400;
+  padding: 5px 0;
+  width: 100%;
+  box-shadow: 1px 1px 1px var(--fourth-color-hover);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  pointer-events: none; /* مهم علشان الزر ميبقاش قابل للضغط */
+}
+
+.card:hover .btn {
+  background-color: var(--fourth-color-hover);
+}

@@ -3,11 +3,13 @@
 }
 
 .nav-link{
+  font-weight: 400;
+
   transition: all 0.1s linear;
 }
 
 .nav-link:hover{
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .navbar {
@@ -17,7 +19,7 @@
     --bs-navbar-active-color: var(--fourth-color);
     --bs-navbar-brand-font-size: 2rem;
     --bs-nav-link-font-size: 1.05em;
-    --bs-navbar-brand-color: var(--fourth-color);
+    --bs-navbar-brand-color: var(--text-dark);
     --bs-navbar-brand-hover-color: var(--fourth-color-hover);
 }
 
@@ -48,7 +50,8 @@
 }
 .dropdown .dropdown-toggle{
   background-color: var(--fourth-color) !important;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 8px 15px;
+  color: var(--text-light);
 }
 
