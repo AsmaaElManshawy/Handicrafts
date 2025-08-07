@@ -1,14 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { IProduct } from '../../interfaces/IProduct/iproduct';
 
 @Component({
   selector: 'app-card-home',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './card-home.component.html',
-  styleUrl: './card-home.component.css'
+  styleUrls: ['./card-home.component.css']
 })
 export class CardHomeComponent {
-  @Input() product: any;
+  @Input() product!: object;
+
 
 }
