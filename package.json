@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:shopping": "node dist/shopping/server/server.mjs"
+    "serve:ssr:shopping": "node dist/shopping/server/server.mjs",
+    "start:server": "json-server --watch shoppingServer.json"
   },
   "private": true,
   "dependencies": {

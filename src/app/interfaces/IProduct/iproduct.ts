@@ -9,6 +9,7 @@ export interface IProduct {
   images: string[];
   category: string;
 }
+
 // id = userid prodID
 // U or P   start with 1
 // id = UP  if id = 19 ==> U0P
