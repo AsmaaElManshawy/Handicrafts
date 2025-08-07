@@ -7,6 +7,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { AddProductComponent } from './components/add-product/add-product.component';
 import { ProductTableComponent } from './components/product-table/product-table.component';
 import { DetailsComponent } from './components/details/details.component';
+import { CardComponent } from './components/card/card.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
