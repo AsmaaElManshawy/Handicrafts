@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -13,15 +14,8 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent {
-
-//   interface CartItem {
-//   id: number;
-//   name: string;
-//   price: number;
-//   quantity: number;
-// }
-  cartItems: CartItem[] = [];
-
+  cartItems: any[] = [];
+  
   totalPrice: number = 0;
 
   constructor() {
@@ -31,7 +25,7 @@ export class CartComponent {
   updateQuantity(itemId: number, event: Event): void {
     const input = event.target as HTMLInputElement;
     const newQuantity = parseInt(input.value);
-
+    
     const item = this.cartItems.find(item => item.id === itemId);
     if (item) {
       item.quantity = newQuantity;
@@ -50,5 +44,4 @@ export class CartComponent {
       0
     );
   }
-
 }

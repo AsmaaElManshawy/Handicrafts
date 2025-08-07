@@ -1,1 +1,89 @@
-<p>category works!</p>
+<main class="categories-page">
+  <div class="container">
+    <div class="page-header">
+      <h1>Browse Categories</h1>
+      <p class="subtitle">Discover unique handmade products by category</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="search-container text-center my-4 position-relative">
+      <input
+        type="text"
+        class="form-control w-50 d-inline-block"
+        [(ngModel)]="searchTerm"
+        (input)="onSearchTermChange()"
+        (keyup.enter)="onSearch()"
+        placeholder="Search by category name..."
+      />
+      <button class="btn btn-primary ms-2" (click)="onSearch()">Search</button>
+      <button
+        class="btn btn-outline-secondary ms-2"
+        *ngIf="searchTerm || products.length"
+        (click)="clearSearch()"
+      >
+        Clear
+      </button>
+
+      <ul
+        class="list-group position-absolute w-50 mx-auto mt-1 z-index-3"
+        style="left: 0; right: 0"
+        *ngIf="searchTerm.trim().length > 0 && filteredCategories.length > 0"
+      >
+        <li
+          class="list-group-item list-group-item-action"
+          *ngFor="let cat of filteredCategories"
+          (click)="searchTerm = cat.name; onSearch()"
+        >
+          {{ cat.name }}
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="isLoading" class="loading-state text-center">
+      <div class="spinner-border text-primary" role="status"></div>
+    </div>
+
+    <div *ngIf="error" class="error-state text-danger text-center">
+      <p>{{ error }}</p>
+      <button class="btn btn-danger" (click)="loadCategories()">
+        Try Again
+      </button>
+    </div>
+
+    <div
+      *ngIf="products.length > 0 && !isLoading && !error"
+      class="products-grid mt-5"
+    >
+      <h3 class="text-center">Results for "{{ searchTerm }}"</h3>
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
+        <div class="col" *ngFor="let product of products">
+          <app-card [product]="product"></app-card>
+        </div>
+      </div>
+      <div class="divider my-4"></div>
+    </div>
+
+    <div
+      *ngIf="!products.length && !searchTerm && !isLoading && !error"
+      class="categories-grid"
+    >
+      <div *ngFor="let category of categories" class="category-card">
+        <a
+          [routerLink]="['/products']"
+          [queryParams]="{ category: category.name }"
+          class="category-link"
+        >
+          <div class="image-container">
+            <img
+              [src]="category.coverImage"
+              [alt]="category.name"
+              class="category-img"
+            />
+            <div class="image-overlay"></div>
+          </div>
+          <h3 class="category-name">{{ category.name }}</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
