@@ -1,12 +1,16 @@
-<a class="card h-80" href="/product-details">
-    <img src="../../../assets/imgs/card-home/daisy pottery.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <div class="title">
-            <h5 class="card-title">Card Title</h5>
-            <span class="seller">Seller</span>
-        </div>
-        <span class="category">Category</span>
-        <p class="card-price">E.G.P 65</p>
-        <button class="btn">Add to cart</button>
+<a class="card h-80" [routerLink]="['/product-details', product?.id]">
+  <img
+    [src]="product?.coverImage"
+    class="card-img-top"
+    alt="{{ product?.name }}"
+  />
+  <div class="card-body">
+    <div class="title">
+      <h5 class="card-title">{{ product?.name }}</h5>
+      <span class="seller">Seller</span>
     </div>
+    <span class="category">{{ product?.category }}</span>
+    <p class="card-price">E.G.P {{ product?.price }}</p>
+    <button class="btn">Add to cart</button>
+  </div>
 </a>

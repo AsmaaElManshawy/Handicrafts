@@ -10,7 +10,9 @@ export class ProductsService {
   // all website means all admins's products
   // service to display all website's product related operations
 
-  private readonly url = `${environment.baseUrl}/user/sellingProducts`;
+  private readonly url = `${environment.baseUrl}/user`;
+  // private readonly url = `${environment.baseUrl}/user/sellingProducts`;
+
   constructor(private readonly http:HttpClient) { }
 
   getAllProducts(){

@@ -1,55 +1,18 @@
 <main>
-    <div class="container justify-content-center align-items-center">
-        <div class="page-title text-center my-5">
-            <h1>All products</h1>
-            <p>In world of mass production .. Handmad is Heartmade</p>
-        </div>
-        <div class="divider"></div>
-        <div class="products">
-            <div class="container text-center">
-                <div class="row row-cols-1 row-cols-md-4 g-4 my-5">
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-4 g-4 my-5">
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-4 g-4 my-5">
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                    <div class="col">
-                        <app-card></app-card>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container justify-content-center align-items-center">
+    <div class="page-title text-center my-5">
+      <h1>All products</h1>
+      <p>In world of mass production .. Handmade is Heartmade</p>
     </div>
+    <div class="divider"></div>
+    <div class="products">
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-md-4 g-4 my-5">
+          <div class="col" *ngFor="let product of products">
+            <app-card [product]="product"></app-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
