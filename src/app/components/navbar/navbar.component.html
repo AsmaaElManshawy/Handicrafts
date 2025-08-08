@@ -32,7 +32,16 @@
             >Home</a
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="isAdmin">
+          <a
+            class="nav-link"
+            [ngClass]="{ 'link-transparent': isTransparent }"
+            [routerLink]="['/adminProduct']"
+            [routerLinkActive]="'activeLink fw-bolder'"
+            >myProducts</a
+          >
+        </li>
+        <li class="nav-item" *ngIf="isUser">
           <a
             class="nav-link"
             *ngIf="isUser"
@@ -42,30 +51,13 @@
             >Product</a
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="isUser">
           <a
             class="nav-link"
-            *ngIf="isUser"
             [routerLink]="['/category']"
             [routerLinkActive]="'activeLink fw-bolder'"
-            >Category</a
-          >
-          <a
-            class="nav-link"
             [ngClass]="{ 'link-transparent': isTransparent }"
-            [routerLink]="['/category']"
-            [routerLinkActive]="'activeLink fw-bolder'"
-            >Category</a
-          >
-        </li>
-        <li class="nav-item" *ngIf="isAdmin">
-          <a
-            class="nav-link"
-            [ngClass]="{ 'link-transparent': isTransparent }"
-            [routerLink]="['/adminProduct']"
-            [routerLinkActive]="'activeLink fw-bolder'"
-            >myProducts</a
-          >
+            >Category</a>
         </li>
         <li class="nav-item" *ngIf="isUser">
           <a

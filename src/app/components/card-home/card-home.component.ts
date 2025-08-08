@@ -10,7 +10,7 @@ import { IProduct } from '../../interfaces/IProduct/iproduct';
   styleUrls: ['./card-home.component.css']
 })
 export class CardHomeComponent {
-  @Input() product!: object;
+  @Input() product!: IProduct;
 
 
 }
