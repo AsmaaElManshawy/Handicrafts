@@ -24,43 +24,43 @@ export class CategoryComponent implements OnInit {
     private categoryService: CategoriesService,
     private productService: ProductsService,
     private route: ActivatedRoute
-  ) {}
-filteredCategories: any[] = [];
+  ) { }
+  filteredCategories: any[] = [];
 
-ngOnInit(): void {
-  this.route.queryParams.subscribe(params => {
-    const category = params['category'];
-    if (category) {
-      this.loadProductsByCategory(category);
-    } else {
-      this.loadCategories();
-    }
-  });
-}
+  ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      const category = params['category'];
+      if (category) {
+        this.loadProductsByCategory(category);
+      } else {
+        this.loadCategories();
+      }
+    });
+  }
 
-loadCategories() {
-  this.isLoading = true;
-  this.error = null;
+  loadCategories() {
+    this.isLoading = true;
+    this.error = null;
 
-  this.categoryService.getAllCategories().subscribe({
-    next: (res: any) => {
-      this.categories = res;
-      this.filteredCategories = res;
-      this.isLoading = false;
-    },
-    error: () => {
-      this.error = 'Failed to load categories. Please try again later';
-      this.isLoading = false;
-    }
-  });
-}
+    this.categoryService.getAllCategories().subscribe({
+      next: (res: any) => {
+        this.categories = res;
+        this.filteredCategories = res;
+        this.isLoading = false;
+      },
+      error: () => {
+        this.error = 'Failed to load categories. Please try again later';
+        this.isLoading = false;
+      }
+    });
+  }
 
-onSearchTermChange(): void {
-  const term = this.searchTerm.trim().toLowerCase();
-  this.filteredCategories = this.categories.filter(cat =>
-    cat.name.toLowerCase().includes(term)
-  );
-}
+  onSearchTermChange(): void {
+    const term = this.searchTerm.trim().toLowerCase();
+    this.filteredCategories = this.categories.filter(cat =>
+      cat.name.toLowerCase().includes(term)
+    );
+  }
 
 
   loadProductsByCategory(categoryName: string) {
@@ -72,7 +72,10 @@ onSearchTermChange(): void {
         const allUsers = res as any[];
         const allProducts = allUsers.flatMap((u: any) => u.sellingProducts);
         this.products = allProducts.filter(
-          (p: any) => p.category?.toLowerCase() === categoryName.toLowerCase()
+          (p: any) =>
+            p &&
+            typeof p.category === 'string' &&
+            p.category.toLowerCase() === categoryName.toLowerCase()
         );
         this.isLoading = false;
       },

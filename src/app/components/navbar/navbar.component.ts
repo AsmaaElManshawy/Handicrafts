@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive ,Router} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -14,6 +14,7 @@ export class NavbarComponent {
   
   isUser:boolean = true;
   isAdmin:boolean = false;
+  constructor(private router: Router) {}
 
   userRole(status:number):void{
     if(status === 1){
@@ -24,4 +25,9 @@ export class NavbarComponent {
       this.isAdmin = true;
     }
   }
+
+    navigateToUserInput(): void {
+    this.router.navigate(['/userInput']);
+  }
+  
 }

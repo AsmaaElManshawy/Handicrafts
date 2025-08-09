@@ -7,7 +7,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { AddProductComponent } from './components/add-product/add-product.component';
 import { ProductTableComponent } from './components/product-table/product-table.component';
 import { DetailsComponent } from './components/details/details.component';
-import { CardComponent } from './components/card/card.component';
+import { UserInputComponent } from './components/user-input/user-input.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,5 +18,6 @@ export const routes: Routes = [
   { path: 'product/:id', component: AddProductComponent },
   { path: 'productDetails/:id', component: DetailsComponent },
   { path: 'adminProduct', component: ProductTableComponent },
+  { path: 'userInput', component: UserInputComponent },
   { path: '**', component: NotfoundComponent },
 ];
