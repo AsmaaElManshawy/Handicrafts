@@ -48,7 +48,7 @@
         <div class="divider"></div>
         <div class="bottom">
             <div class="container text-center" >
-                <div class="row row-cols-1 row-cols-md-5"  *ngIf="products.length > 0; else noProducts">
+                <div class="row row-cols-1 row-cols-md-5"  *ngIf="newArrival; else noProducts">
                     <div class="col" *ngFor="let p of products">
                         <app-card-home [product]="p"></app-card-home>
                     </div>

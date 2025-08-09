@@ -43,8 +43,7 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" *ngIf="isUser" [routerLink]="['/category']" [routerLinkActive]="'activeLink fw-bolder'">Category</a>
-          <a class="nav-link"  [ngClass]="{'link-transparent': isTransparent}" [routerLink]="['/category']" [routerLinkActive]="'activeLink fw-bolder'">Category</a>
+          <a class="nav-link" *ngIf="isUser"  [ngClass]="{'link-transparent': isTransparent}" [routerLink]="['/category']" [routerLinkActive]="'activeLink fw-bolder'">Category</a>
         </li>
         <li class="nav-item" *ngIf="isAdmin">
           <a

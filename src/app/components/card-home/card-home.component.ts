@@ -11,5 +11,6 @@ import { HomeComponent } from '../home/home.component';
   styleUrls: ['./card-home.component.css']
 })
 export class CardHomeComponent {
-  @Input() product!: any;
+  @Input() product: any;
+  
 }

@@ -3,27 +3,32 @@
     {
       "id": "1",
       "name": "Wall-Art",
-      "coverImage": "https://i.postimg.cc/JhkNHcBs/wall-art-mirror-2-1.jpg"
+      "coverImage": "./assets/imgs/DB/WallArt/macrameWallHanging.jpg"
     },
     {
       "id": "2",
       "name": "Accessories",
-      "coverImage": "https://i.postimg.cc/wj8W0p43/e8c0da31dc2706264fe79dd9779ade13.jpg"
+      "coverImage": "./assets/imgs/DB/Accessories/Pinkset.jpg"
     },
     {
       "id": "3",
-      "name": "Dining",
-      "coverImage": "https://i.postimg.cc/Lsppwd7y/mug-i88.jpg"
+      "name": "Pottery",
+      "coverImage": "./assets/imgs/DB/pottery/rings.jpg"
     },
     {
       "id": "4",
       "name": "Casual-Seating",
-      "coverImage": "https://i.postimg.cc/L4v1sFXF/HT-003-4442042a-c24d-4ffe-96af-38fbe91606de.jpg"
+      "coverImage": "./assets/imgs/DB/casualset/Water_Hyacinth_table.jpg"
     },
     {
       "id": "5",
       "name": "Candle",
-      "coverImage": "https://i.postimg.cc/j2h8YXTJ/candle-02.jpg"
+      "coverImage": "./assets/imgs/DB/Candles/5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Bag",
+      "coverImage": "./assets/imgs/DB/Bags/1.jpg"
     }
   ],
   "user": [
@@ -38,166 +43,151 @@
       ],
       "sellingProducts": [
         {
-          "id":"11",
-          "name": "Urban Rectangular Abstract Metal Wall Art",
-          "price": 550,
-          "quantity": 20,
-          "coverImage": "https://i.postimg.cc/JhkNHcBs/wall-art-mirror-2-1.jpg",
+          "id": "11",
+          "name": "Macramé Shelf Wall Hanging",
+          "price": 650,
+          "quantity": 15,
+          "coverImage": "./assets/imgs/DB/WallArt/wallArt1.jpg",
           "images": [
-            "https://i.postimg.cc/JhkNHcBs/wall-art-mirror-2-1.jpg",
-            "https://i.postimg.cc/C1pjGBjm/DSC2976e.jpg",
-            "https://i.postimg.cc/gjY87Cth/b9eb2889-061a-4b9c-8fca-4d78387592f0.jpg"
+            "./assets/imgs/DB/WallArt/wallArt1.jpg",
+            "./assets/imgs/DB/WallArt/wallArt1-2.jpg",
+            "./assets/imgs/DB/WallArt/wallArt1-3.jpg"
           ],
           "rating": 4.8,
           "category": "Wall-Art",
-          "description": "Display this lavish wall art for an elegant touch to any modern and contemporary living space. This item ships in 1 carton. Features rectangular metal frames\nDue to the handmade nature of this item, no two will be alike, and there will be slight differences in color and foil pattern. Metal loop backing for easy hang; nails and screws are not included. Suitable for indoor use only. Contemporary style.\nshipping time is 6 to 7 days\nEasy Installation\nMaterial – Iron 100 % rust proof\nDimension-\nHight – 24″\nWidth – 48″\nNote: Handmade product dimensions might be slightly different, please allow 5 to 7 cm difference."
+          "description": "Handwoven macramé shelf with a natural wooden plank, perfect for plants, candles, or decor. Lightweight yet sturdy, this boho-chic piece adds warmth and texture to any space."
         },
         {
-          "id":"12",
-          "name": "Multicolor Large Abstract Metal Wall Art",
-          "price": 750,
-          "quantity": 10,
-          "coverImage": "https://i.postimg.cc/SNg7BKhx/1-5e485674-5c2b-4c67-9032-000e0891b9fd.jpg",
+          "id": "12",
+          "name": "Multicolor Large Wall Art",
+          "price": 820,
+          "quantity": 12,
+          "coverImage": "./assets/imgs/DB/WallArt/wallArt2.jpg",
           "images": [
-            "https://i.postimg.cc/SNg7BKhx/1-5e485674-5c2b-4c67-9032-000e0891b9fd.jpg",
-            "https://i.postimg.cc/g2rqmPzq/DSC2837.jpg",
-            "https://i.postimg.cc/YCVNSyjc/DSC2834.jpg"
+            "./assets/imgs/DB/WallArt/wallArt2.jpg",
+            "./assets/imgs/DB/WallArt/wallArt2-2.jpg",
+            "./assets/imgs/DB/WallArt/wallArt2-3.jpg"
           ],
-          "rating": 4.5,
+          "rating": 4.7,
           "category": "Wall-Art",
-          "description": "Brighten up your home decor with the Metal Colorful Wall Art! This beautiful multicolor wall art piece is crafted from metal and is sure to bring a splash of color to any room. From the bedroom to the dining room – wherever you hang this Colorful Wall Art, it will be a stunning talking point. Let the piece do all of the talking and add a unique touch to your home today\nMaterial – Iron 100% rust proof\nSize – 48×24 inch\nHand Made\nshipping time is to 8 to 10 days\nNote: Handmade product dimensions might be slightly different, please allow 5 to 7 cm difference"
+          "description": "A vibrant macramé wall art made from hand-dyed cotton cords in multiple colors. Perfect as a bold statement piece in living rooms, studios, or creative spaces."
         },
         {
-          "id":"13",
-          "name": "Cosmopolitan Black and Gold Metal Wall Art",
-          "price": 450,
-          "quantity": 15,
-          "coverImage": "https://i.postimg.cc/L64T8V3h/497592f5e5994332a8be7a6d2499ff6b.jpg",
-          "images": [
-            "https://i.postimg.cc/L64T8V3h/497592f5e5994332a8be7a6d2499ff6b.jpg",
-            "https://i.postimg.cc/Y9wNKNSr/24x54in.jpg",
-            "https://i.postimg.cc/0QdY866p/DSC2686.jpg",
-            "https://i.postimg.cc/4yfznJtj/DSC2689.jpg"
-          ],
-          "rating": 5,
-          "category": "Wall-Art",
-          "description": "Discover the Ultimate Solution To Your Living Room or Bedroom or Dining Decoration Problem Our Metal Wall Sculptures are your best bet to elevate the décor of your house Featuring a premium metal finish, our wall sculptures look very realistic and unique at the same time. Not to mention you can easily clean the Wall Sculpture with a dry cloth or a feather duster The Product is Floating Fixture for Wall for Decorative Purpose .It matches well with your Home items like Chandeliers or Painting or photo Frames or Murals or other Decors. The products are inspired from Modern century Homes and apartment for cool and Inspirational Architecture. Couples and Family Room Use such distinct Art Work. In offices also this product can be used in Reception as strong framed decorations.\nMaterial – Iron 100 % rust proof\nHight – 25″ inch\nLength – 58″ inch\nShipping time is 6 to 7 days\nEasy Installation"
-        },
-          {
-            "id":"14",
-          "name": "Modern Metal Leaves Metal Wall Art",
-          "price": 550,
+          "id": "13",
+          "name": "Cosmopolitan Olive and Beige Strings Wall Art",
+          "price": 580,
           "quantity": 18,
-          "coverImage": "https://i.postimg.cc/mkB0DFmR/933c270a547543108819273f92ad5646.jpg",
+          "coverImage": "./assets/imgs/DB/WallArt/wallArt3.jpg",
           "images": [
-            "https://i.postimg.cc/mkB0DFmR/933c270a547543108819273f92ad5646.jpg",
-            "https://i.postimg.cc/CMs32mKK/1f2088c80778492ba9602340cec5fcf6.jpg",
-            "https://i.postimg.cc/BQZrfH8B/DSC2828.jpg",
-            "https://i.postimg.cc/8c4xrPYv/DSC2829.jpg"
+            "./assets/imgs/DB/WallArt/wallArt3.jpg",
+            "./assets/imgs/DB/WallArt/wallArt3-2.jpg",
+            "./assets/imgs/DB/WallArt/wallArt3-3.jpg"
           ],
-          "rating": 5,
+          "rating": 4.6,
           "category": "Wall-Art",
-          "description": "This classic wall decor is made from iron and painted by hand, which has a beautiful outlook and a strong sense of metal texture. Some of the leaves adopt a hollow-out design, and the overall design of the product shows the beauty of symmetry, bringing a contemporary minimalist style to your life.\nMaterial- Iron 100% rust proof\nOverall Dimensions: 53.5″W x 19.7″H (1360mmW x 500mmH)\nShipping time is 6 to 7 days\nEasy Installation\nHandmade"
+          "description": "Minimalist macramé wall hanging in calming olive and beige tones. Adds a soft, modern-boho touch to bedrooms or living areas."
         },
-          {
-            "id":"15",
-          "name": "Multicolor wall plates Metal Wall Art",
-          "price": 715,
+        {
+          "id": "14",
+          "name": "Modern Swings Strings Wall Art",
+          "price": 620,
+          "quantity": 20,
+          "coverImage": "./assets/imgs/DB/WallArt/wallArt4.jpg",
+          "images": [
+            "./assets/imgs/DB/WallArt/wallArt4.jpg",
+            "./assets/imgs/DB/WallArt/wallArt4-2.jpg",
+            "./assets/imgs/DB/WallArt/wallArt4-3.jpg"
+          ],
+          "rating": 4.9,
+          "category": "Wall-Art",
+          "description": "Intricate macramé knots with playful fringes for a fresh and modern bohemian vibe. Great for above beds, sofas, or Pottery tables."
+        },
+        {
+          "id": "15",
+          "name": "Painting Brown Palette Wall Art",
+          "price": 780,
+          "quantity": 10,
+          "coverImage": "./assets/imgs/DB/WallArt/wallArt5.jpg",
+          "images": [
+            "./assets/imgs/DB/WallArt/wallArt5.jpg",
+            "./assets/imgs/DB/WallArt/wallArt5-2.jpg",
+            "./assets/imgs/DB/WallArt/wallArt5-3.jpg"
+          ],
+          "rating": 4.7,
+          "category": "Wall-Art",
+          "description": "Earth-toned macramé wall art featuring warm browns and creams. Perfect for rustic, bohemian, or neutral interiors."
+        },
+        {
+          "id": "16",
+          "name": "Sand Waves Painting Wall Art",
+          "price": 890,
           "quantity": 8,
-          "coverImage": "https://i.postimg.cc/rFJtKXwL/1-1-1-e065c4ca-bba8-42c4-a0f4-598cd9360db9.jpg",
+          "coverImage": "./assets/imgs/DB/WallArt/wallArt6.jpg",
           "images": [
-            "https://i.postimg.cc/rFJtKXwL/1-1-1-e065c4ca-bba8-42c4-a0f4-598cd9360db9.jpg",
-            "https://i.postimg.cc/FHHkSWYk/2-1-f4d549a9-6818-4613-99ae-a94408035f54.jpg"
+            "./assets/imgs/DB/WallArt/wallArt6.jpg",
+            "./assets/imgs/DB/WallArt/wallArt6-2.jpg",
+            "./assets/imgs/DB/WallArt/wallArt6-3.jpg"
           ],
-          "rating": 5,
+          "rating": 4.8,
           "category": "Wall-Art",
-          "description": "Make a statement with our unique, wall art that’ll transform any room into a work of art! Our vibrant and vivid designs are printed on durable canvas, and our lightweight Iron wall art  make it easy to hang. Unlock the wow factor in your home or office by experiencing the power of  wall art. Create an atmosphere that wows your guests and encourages conversation – you won’t be disappointed with the results!\nMaterial – Iron 100% Rust Proof\nSize – 48×24 Inches\nHand Made\nShipping Time is 6 to 7 days."
-        },
-          {
-            "id":"16",
-          "name": "Multicolor Abstract Metal Wall Art",
-          "price": 750,
-          "quantity": 4,
-          "coverImage": "https://i.postimg.cc/PfKtDtYK/2aebd56d68211cd398ed721769e1ccef.jpg",
-          "images": [
-            "https://i.postimg.cc/PfKtDtYK/2aebd56d68211cd398ed721769e1ccef.jpg",
-            "https://i.postimg.cc/90XCkS5G/9b63a8c12fce4c30b7b158d9a2b6876c.jpg"
-          ],
-          "rating": 5,
-          "category": "Wall-Art",
-          "description": "Bring a modern style to any space with this distinctive metal wall decor. This abstract wall decor is crafted from iron and finished in multiple soothing color tones. It is a beautiful artistic statement for any living space in your home. Enjoy this abstract wall art with its rectangular geometric shapes in soft colours. With its abstract geometric design, the modern wall decor is a stylish contemporary piece of art. It completes the look in any contemporary or mid-century modern living room, bedroom, dining room, or office.\nMaterial – Iron 100 % rust proof\ndimension-\nHight – 24\nLength – 60\nShipping time is 6 to 7 days\nEasy Installation."
+          "description": "Handwoven macramé piece in sandy beige tones, designed to mimic gentle desert waves. Adds a calming, coastal-boho feel."
         },
         {
-          "id":"17",
-          "name": "Bogota Cuff - Taleed",
-          "price": 1690,
-          "quantity": 2,
-          "coverImage": "https://i.postimg.cc/wj8W0p43/e8c0da31dc2706264fe79dd9779ade13.jpg",
-          "images": [
-            "https://i.postimg.cc/wj8W0p43/e8c0da31dc2706264fe79dd9779ade13.jpg",
-            "https://i.postimg.cc/W1G5yHx8/AMI4960.jpg",
-            "https://i.postimg.cc/R0vgxTBB/AMI4954.jpg"
-          ],
-          "rating": 5,
-          "category": "Accessories",
-          "description": "21 Cerate gold plated fine brass cuffs with natural durzi stones; blue and green agate, fuchsia and white jade\nMaterial: 21 Cerate gold plated fine brass\nPlease note: This Product is Non-returnable Due to Hygiene Reasons."
-        },
-        {
-          "id":"18",
-          "name": "Pottery Coffee Cup -Dots",
+          "id": "17",
+          "name": "Pottery Mug - Sunshine",
           "price": 380,
           "quantity": 9,
-          "coverImage": "https://i.postimg.cc/Lsppwd7y/mug-i88.jpg",
+          "coverImage": "./assets/imgs/DB/pottery/sunshine mug.jpg",
           "images": [
-            "https://i.postimg.cc/Lsppwd7y/mug-i88.jpg",
-            "https://i.postimg.cc/Xvkb0H6n/mug-f8.jpg",
-            "https://i.postimg.cc/K8Lb0c9k/mug-bh8.jpg"
+            "./assets/imgs/DB/pottery/sunshine mug.jpg",
+            "./assets/imgs/DB/pottery/sunshine mug.jpg",
+            "./assets/imgs/DB/pottery/sunshine mug.jpg"
           ],
           "rating": 5,
-          "category": "Dining",
+          "category": "Pottery",
           "description": "Beautiful Handmade Cup & Saucer Set – Crafted for Your Coffee Moments\nEnjoy your favorite drink in style with this handcrafted cup and saucer set. Made from healthy, food-safe pottery, it's perfect for everyday use and adds a \nunique touch to your coffee ritual.\nCapacity: 100 ml\nMicrowave and dishwasher safe\nNot suitable for sudden thermal shock\nBest cleaned with a soft sponge\nPlease note: This product is handmade, so slight variations may occur, making each piece truly one of a kind."
         },
         {
-          "id":"19",
-          "name": "Pottery Mug-Carved Blue",
-          "price": 380,
+          "id": "18",
+          "name": "Pottery Mug - Daisy",
+          "price": 420,
           "quantity": 2,
-          "coverImage": "https://i.postimg.cc/zBNTyfQn/testmug.jpg",
+          "coverImage": "./assets/imgs/DB/pottery/Daisy mug.jpg",
           "images": [
-            "https://i.postimg.cc/zBNTyfQn/testmug.jpg",
-            "https://i.postimg.cc/cJwQ13Fx/testmug-2.jpg"
+            "./assets/imgs/DB/pottery/Daisy mug.jpg",
+            "./assets/imgs/DB/pottery/Daisy mug.jpg"
           ],
           "rating": 5,
-          "category": "Dining",
-          "description": "Handmade Pottery Mug – Crafted for Your Favorite Drinks\nEnjoy your beverages in this beautifully handcrafted mug, made from safe and healthy pottery, perfect for everyday use.\nCapacity: 400 ml\nMicrowave and dishwasher safe\nNot suitable for sudden thermal shock\nRecommended to clean with a soft sponge\nPlease note: This product is handmade, so slight variations may occur, making each piece uniquely special."
+          "category": "Pottery",
+          "description": "Hand-painted floral mug featuring white daisy motifs on a pastel base. Ideal for gifting or daily use."
         },
         {
-          "id":"101",
-          "name": "Pottery Mug - Sea Waves",
-          "price": 245,
+          "id": "19",
+          "name": "Pottery Mug - Cherry",
+          "price": 290,
           "quantity": 11,
-          "coverImage": "https://i.postimg.cc/HsT7DxcM/pottery-mug12nov-1.jpg",
+          "coverImage": "./assets/imgs/DB/pottery/cherry mug.jpg",
           "images": [
-            "https://i.postimg.cc/HsT7DxcM/pottery-mug12nov-1.jpg",
-            "https://i.postimg.cc/Qdt9Cyqx/Screenshot-20250806-023504-Google.jpg"
+            "./assets/imgs/DB/pottery/cherry mug.jpg",
+            "./assets/imgs/DB/pottery/cherry mug.jpg"
           ],
           "rating": 5,
-          "category": "Dining",
-          "description": "For You, Your Friends, and Loved Ones – A Stunning Handmade Pottery Mug in Mesmerizing Ocean Wave Colors\nCrafted with care, this mug features beautifully blended shades of blue that create a magical, eye-catching design. Handmade from safe, healthy, and durable \npottery to accompany you from the start to the end of your day.\nCapacity: 380 ml\nMicrowave safe\nNot suitable for sudden thermal shock\nRecommended to clean with a soft sponge\nPlease note: This item is handmade, so slight variations may occur, making each piece uniquely beautiful."
+          "category": "Pottery",
+          "description": "Charming handmade mug in a deep cherry red glaze. A cozy companion for hot cocoa or herbal tea."
         },
         {
-          "id":"102",
-          "name": "Pottery Mug - Watermelon",
-          "price": 350,
+          "id": "101",
+          "name": "Pottery Mug - Love",
+          "price": 390,
           "quantity": 1,
-          "coverImage": "https://i.postimg.cc/qR0phtdX/mug9-3.jpg",
+          "coverImage": "./assets/imgs/DB/pottery/Love mug.jpg",
           "images": [
-            "https://i.postimg.cc/qR0phtdX/mug9-3.jpg",
-            "https://i.postimg.cc/QtbhpX8L/mug10-3.jpg"
+            "./assets/imgs/DB/pottery/Love mug.jpg",
+            "./assets/imgs/DB/pottery/Love mug.jpg"
           ],
           "rating": 5,
-          "category": "Dining",
-          "description": "A Splash of Joy Every Day – Handmade Watermelon-Themed Pottery Mug\nBrighten up your day with every sip! This cheerful, watermelon-inspired mug is handmade from safe, healthy, and sturdy pottery — perfect for your favorite \ndrinks and a delightful gift for lovers of unique, artistic pieces.\nCapacity: 380 ml\nMicrowave and dishwasher safe\nRecommended to clean with a soft sponge\nPlease note: This product is handmade, so slight variations may occur, making each piece one of a kind."
+          "category": "Pottery",
+          "description": "Heart-themed pottery mug with a warm, hand-painted design. Perfect as a romantic gift or personal keepsake."
         }
       ]
     },
@@ -212,37 +202,37 @@
       ],
       "sellingProducts": [
         {
-          "id":"21",
-          "name": "Winter Deer Metal Wall Art",
-          "price": 725,
+          "id": "21",
+          "name": "Yarn Blue Wall Art",
+          "price": 750,
           "quantity": 15,
-          "coverImage": "https://i.postimg.cc/Y9bJvCZW/images-1.jpg",
+          "coverImage": "./assets/imgs/DB/WallArt/Yarn wallart.jpg",
           "images": [
-            "https://i.postimg.cc/Y9bJvCZW/images-1.jpg",
-            "https://i.postimg.cc/FR9MFLWv/images-3.jpg"
+            "./assets/imgs/DB/WallArt/Yarn wallart.jpg",
+            "./assets/imgs/DB/WallArt/Yarn wallart.jpg"
           ],
           "rating": 4.5,
           "category": "Wall-Art",
-          "description": "Transform your home decor with this stunning winter deer metal wall art! Crafted from high-quality metal, this eye-catching piece is sure to be a show stopper in any room. Its intricate and elegant design will bring a touch of nature and beauty to your interior, while also adding a unique style to your living space. Make an impactful statement and shop our winter deer metal wall art today!\nMaterial – Iron 100% rust proof\nSize – 51×21 Inches\nHand Made\nShipping time is 6 to 7 days."
+          "description": "Elevate your living space with our Yarn Blue Wall Art, meticulously handcrafted from premium macrame. This stunning piece adds a touch of elegance and warmth to any room, making it a perfect focal point for your decor."
         },
         {
-          "id":"22",
-          "name": "Golden Platter Metal Wall Art",
-          "price": 785,
+          "id": "22",
+          "name": "Yarn Beige Mirror",
+          "price": 800,
           "quantity": 13,
-          "coverImage": "https://i.postimg.cc/9Q5NF90k/1-2.jpg",
+          "coverImage": "./assets/imgs/DB/WallArt/Yarn mirror.jpg",
           "images": [
-            "https://i.postimg.cc/9Q5NF90k/1-2.jpg",
-            "https://i.postimg.cc/c48bShxY/2-3c1e3080-c1ed-485b-a718-6a177e7a9923.jpg"
+            "./assets/imgs/DB/WallArt/Yarn mirror.jpg",
+            "./assets/imgs/DB/WallArt/Yarn mirror.jpg"
           ],
           "rating": 5,
           "category": "Wall-Art",
-          "description": "Make your walls come alive with our unique platter wall art! Our platter collection features amazing designs that can bring any room to life. Perfect for home or office decor, you’ll be sure to make a statement with our eye-catching pieces. Plus, it’s easy to install. Give your space a fresh new look with platter wall art from us today!\nMaterial – Iron 100% Rust Proof\nSize – 47×27 Inch\nHand Made\nShipping time is 8 to 10 days"
+          "description": "Transform your walls with our Yarn Beige Mirror, a unique macrame creation that combines functionality with artistic flair. This mirror not only reflects beauty but also enhances the ambiance of your home."
         },
         {
-          "id":"23",
+          "id": "23",
           "name": "Boho Macrame Leaf Wall Hanging",
-          "price": 285,
+          "price": 300,
           "quantity": 7,
           "coverImage": "https://i.postimg.cc/zBKrdR96/MNB03167.jpg",
           "images": [
@@ -251,128 +241,128 @@
           ],
           "rating": 5,
           "category": "Wall-Art",
-          "description": "Add a gentle boho touch to your space with this Macrame Leaf Wall Hanging, also known as Lá Mùa Đông. Handmade from soft cotton rope, this piece features intricately knotted leaf shapes and natural wooden beads, perfect for creating a warm, rustic atmosphere.\nThis fiber art wall decor is ideal for nature lovers, creative souls, and anyone who values handmade beauty. It fits well in boho, farmhouse, and minimalist \ninteriors — from living rooms and bedrooms to entryways.\nLooking for a meaningful bohemian home gift? Whether it’s a birthday, housewarming, or simply a decor refresh, this macrame wall hanging adds warmth and character to any wall. Each piece is lovingly crafted to bring calming, natural charm into your home."
+          "description": "Bring a bohemian vibe to your home with our Boho Macrame Leaf Wall Hanging. Handcrafted from soft cotton rope, this piece features intricate leaf designs that create a serene and inviting atmosphere."
         },
         {
-          "id":"24",
-          "name": "Boho Macrame V51",
-          "price": 155,
+          "id": "24",
+          "name": "Curved Yarn Mirror",
+          "price": 160,
           "quantity": 9,
-          "coverImage": "https://i.postimg.cc/FHy0QP0H/100cm-Photo-Room-2024-05-14-T02-26-49-215-Z.png",
+          "coverImage": "./assets/imgs/DB/WallArt/mirror.jpg",
           "images": [
-            "https://i.postimg.cc/FHy0QP0H/100cm-Photo-Room-2024-05-14-T02-26-49-215-Z.png",
-            "https://i.postimg.cc/wj8DZKyr/MNB09680.jpg",
-            "https://i.postimg.cc/28B40j6v/MNB07940-Photoroom-6.jpg"
+            "./assets/imgs/DB/WallArt/mirror.jpg",
+            "./assets/imgs/DB/WallArt/mirror.jpg",
+            "./assets/imgs/DB/WallArt/mirror.jpg"
           ],
           "rating": 5,
           "category": "Wall-Art",
-          "description": "Looking for a unique home decor piece? Our Macrame Dreamcatcher is handmade from natural cotton cord, blending boho charm and minimalist design. Perfect for macrame wall hanging lovers, this piece makes a thoughtful gift for birthdays, housewarmings, or simply to elevate your cozy space. With a soft texture and diy macrame wall hanging aesthetic, this cotton wall hanging adds personality and warmth to any corner. Whether you're into boho dreamcatcher looks or need a relaxing statement for your bedroom or hallway, this decor fits beautifully."
+          "description": "Discover the beauty of our Curved Yarn Mirror, a stunning macrame piece that adds a touch of elegance to your decor. Perfect for any room, this mirror is both functional and a work of art."
         },
         {
-          "id":"25",
-          "name": "Macramé Shelf Wall Hanging Workshop",
-          "price": 285,
+          "id": "25",
+          "name": "Macramé Flowered Wall Hanging",
+          "price": 300,
           "quantity": 6,
-          "coverImage": "https://i.postimg.cc/JzZSCWTH/SDCC-macrame-wall-shelf1-sq-2.jpg",
+          "coverImage": "./assets/imgs/DB/WallArt/macrameWallHanging.jpg",
           "images": [
-            "https://i.postimg.cc/JzZSCWTH/SDCC-macrame-wall-shelf1-sq-2.jpg",
-            "https://i.postimg.cc/fbvFkfQw/SDCC-macrame-wall-shelf.jpg"
+            "./assets/imgs/DB/WallArt/macrameWallHanging.jpg",
+            "./assets/imgs/DB/WallArt/macrameWallHanging.jpg"
           ],
           "rating": 5,
           "category": "Wall-Art",
-          "description": "Beautiful and functional, this Macramé Shelf Wall Hanging is a great way to add texture to your space and also display your favorite nick-nacks!\nThis beginner-friendly workshop will teach you several different macramé knots and also help develop your knotting skills.\nChoose from a basic Pine wood shelf, or upgrade to a darker-hued Walnut wood.\nAll supplies and materials are included. Nicknacks in photo are not included.\nAges 11 years and up is recommended, or 8+ years if accompanied by an adult."
+          "description": "Join our Macramé Shelf Flowered Wall Hanging Workshop and learn the art of macrame! Create your own beautiful wall hanging while enjoying a fun and creative experience. All materials are included."
         },
         {
-          "id":"26",
-          "name": "Houndstooth Haven Chair",
-          "price": 2916,
+          "id": "26",
+          "name": "Mushroom Shaped Couch",
+          "price": 2900,
           "quantity": 30,
-          "coverImage": "https://i.postimg.cc/L4v1sFXF/HT-003-4442042a-c24d-4ffe-96af-38fbe91606de.jpg",
+          "coverImage": "./assets/imgs/DB/casualset/mushrom.jpg",
           "images": [
-            "https://i.postimg.cc/L4v1sFXF/HT-003-4442042a-c24d-4ffe-96af-38fbe91606de.jpg",
-            "https://i.postimg.cc/zvdb2KMG/HT-005-632696c1-aa6d-4ca2-bb2f-ef549e34c6ee.jpg",
-            "https://i.postimg.cc/FzFkxDT6/HHT-001.jpg"
+            "./assets/imgs/DB/casualset/mushrom.jpg",
+            "./assets/imgs/DB/casualset/mushrom.jpg",
+            "./assets/imgs/DB/casualset/mushrom.jpg"
           ],
           "rating": 5,
           "category": "Casual-Seating",
-          "description": "Unwind in the timeless elegance of the Houndstooth Haven Chair. This captivating piece seamlessly blend modern design with unparalleled comfort, creating a statement focal point in any living space. he sophisticated houndstooth pattern in a rich green hue adds a touch of personality and visual intrigue to your decor.  The deep seat and generous cushioning provide exceptional support, while the ergonomic design cradles your body in perfect comfort.\nMaterial- Iron leg 100% rust proof\nDimension- 27x25x29 inch\nShipping time is 10 to 12 days\nHandmade"
+          "description": "Unwind in style with our Mushroom Shaped Couch, a unique seating option that combines comfort and modern design. Perfect for casual gatherings or relaxing at home."
         },
         {
-          "id":"27",
-          "name": "Ceramic Mug - Flowers",
-          "price": 320,
+          "id": "27",
+          "name": "Handmade Macrame Pillow Set",
+          "price": 350,
           "quantity": 7,
-          "coverImage": "https://i.postimg.cc/QNm7TtXb/img-20250327-050842.png",
+          "coverImage": "./assets/imgs/DB/casualset/pillow.jpg",
           "images": [
-            "https://i.postimg.cc/QNm7TtXb/img-20250327-050842.png",
-            "https://i.postimg.cc/L59ZWdVL/img-20250327-050826.png",
-            "https://i.postimg.cc/vT06FPPj/img-20250327-050741.png"
+            "./assets/imgs/DB/casualset/pillow.jpg",
+            "./assets/imgs/DB/casualset/pillow.jpg",
+            "./assets/imgs/DB/casualset/pillow.jpg"
           ],
           "rating": 5,
-          "category": "Dining",
-          "description": "Elegant Ceramic Mug – Style & Sophistication in Every Sip\nWith its refined design and unique patterns, this ceramic mug adds a special touch to your coffee moments.\nA perfect gift for those who appreciate elegant details.\n\nCapacity: 350 ml\nMicrowave safe\nNot dishwasher safe\nRecommended to hand wash with a soft sponge\nSuitable for everyday use"
-        }, 
-        {
-          "id":"28",
-          "name": "Multicolor textured Round Glass Set of 6",
-          "price": 599,
-          "quantity": 5,
-          "coverImage": "https://i.postimg.cc/905gFT5C/traditional-indian-masala-tea-chai-blue-cup-copy-min.webp",
-          "images": [
-            "https://i.postimg.cc/905gFT5C/traditional-indian-masala-tea-chai-blue-cup-copy-min.webp",
-            "https://i.postimg.cc/FRJn4p6T/MG-4983-copy-min.webp",
-            "https://i.postimg.cc/N0nPSSdy/MG-5086-copy-min.webp"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "Introducing our Multicolour Textured Round Glass - a striking blend of artistry and function. This unique glass features a mesmerizing array of vibrant hues that swirl together in an elegant, textured pattern.\nIts round shape adds a touch of sophistication, making it a versatile addition to any home decor. Perfect for adding a splash of colour to your table setting or as a decorative accent, this glass is both visually captivating and practical. Each piece is meticulously crafted to ensure durability while showcasing a vivid, colourful design that captures and refracts light beautifully\nElevate your space with this eye-catching, multi-dimensional glass that blends contemporary style with timeless charm.\nSONCHIDIYA - EMBRACING THE TUNES AND RHYTHMS OF TRADITION\n1.Environment Friendly - Sonchidiya believes in enhancing the beauty of handicraft products because of their eco-friendly nature and the preparation of products is exquisitely done by majestic Artisans.\n2. Emphasizing Uniqueness - Our designs and crafts are worthy enough to be kept in exclusive frame and have reliable quality assuring complete trust.\n3. Empowering Employment - We focus on exploring skills and talents ensuring opportunities for growth.\n4. Diversity - Our Range of Products speaks to every customer.\n5. Preservation of Cultural Heritage - Our handicrafts reflects the rich cultural heritage of the country."
+          "category": "Casual-Seating",
+          "description": "Add a touch of comfort to your home with our Handmade Macrame Pillow Set. Each pillow is crafted with care, featuring intricate designs that enhance your living space."
         },
         {
-          "id":"29",
-          "name": "Diamond Cut Teal And Orange Cup Set of 6",
-          "price": 699,
+          "id": "28",
+          "name": "Pottery Mug - Customized Animal",
+          "price": 600,
+          "quantity": 5,
+          "coverImage": "./assets/imgs/DB/pottery/animaled.jpg",
+          "images": [
+            "./assets/imgs/DB/pottery/animaled.jpg",
+            "./assets/imgs/DB/pottery/animaled.jpg",
+            "./assets/imgs/DB/pottery/animaled.jpg"
+          ],
+          "rating": 5,
+          "category": "Pottery",
+          "description": "Enjoy your favorite beverages in our Customized Animal Pottery Mug. Each mug is uniquely crafted, showcasing beautiful designs that reflect your personality."
+        },
+        {
+          "id": "29",
+          "name": "Pottery Mug - Pink Set",
+          "price": 750,
           "quantity": 9,
-          "coverImage": "https://i.postimg.cc/fTXCRkBR/11.webp",
+          "coverImage": "./assets/imgs/DB/pottery/Set.jpg",
           "images": [
-            "https://i.postimg.cc/fTXCRkBR/11.webp",
-            "https://i.postimg.cc/2S7xnMpp/MG-2303.webp",
-            "https://i.postimg.cc/CxgNBYQH/MG-2384.webp"
+            "./assets/imgs/DB/pottery/Set.jpg",
+            "./assets/imgs/DB/pottery/Set.jpg",
+            "./assets/imgs/DB/pottery/Set.jpg"
           ],
           "rating": 5,
-          "category": "Dining",
-          "description": "Introducing our exquisite Diamond Cut Teal and Orange Cup, a masterpiece that blends elegance with functionality. The exterior boasts a captivating teal hue, adorned with intricate diamond-cut patterns that catch the light and add a touch of sophistication to your table setting.\nInside, the vibrant orange glaze provides a striking contrast, making every sip a visual delight. This cup is not just a vessel for your favourite beverage; \nit's a statement piece that elevates your drinking experience. Perfect for both casual and formal occasions, the Diamond Cut Teal and Orange Cup is a must\n-have for any discerning collector.\nSONCHIDIYA - EMBRACING THE TUNES AND RHYTHMS OF TRADITION\n1.Environment Friendly - Sonchidiya believes in enhancing the beauty of handicraft products because of their eco-friendly nature and the preparation of products is exquisitely done by majestic Artisans.\n2. Emphasizing Uniqueness - Our designs and crafts are worthy enough to be kept in exclusive frame and have reliable quality assuring complete trust.\n3. Empowering Employment - We focus on exploring skills and talents ensuring opportunities for growth.\n4. Diversity - Our Range of Products speaks to every customer.\n5. Preservation of Cultural Heritage - Our handicrafts reflects the rich cultural heritage of the country.\n6. Boost to Art and Creativity - Our Products encourage the artistic expression and creativity associated with innovative designs and artistic landscape."
+          "category": "Pottery",
+          "description": "Brighten your table with our Pottery Mug - Pink Set. These handcrafted mugs are perfect for any occasion, combining style and functionality."
         },
         {
-          "id":"201",
-          "name": "Mustard Color Cup And Kettle Set",
-          "price": 549,
+          "id": "201",
+          "name": "Pottery Mug - Candy Cane",
+          "price": 600,
           "quantity": 12,
-          "coverImage": "https://i.postimg.cc/90kM7Wbm/MG-4764-min.webp",
+          "coverImage": "./assets/imgs/DB/pottery/Candy.jpg",
           "images": [
-            "https://i.postimg.cc/90kM7Wbm/MG-4764-min.webp",
-            "https://i.postimg.cc/XqqqqZw1/MG-5108-copy-min.webp",
-            "https://i.postimg.cc/DZBm7Qbb/MG-5116-copy-min.webp"
+            "./assets/imgs/DB/pottery/Candy.jpg",
+            "./assets/imgs/DB/pottery/Candy.jpg",
+            "./assets/imgs/DB/pottery/Candy.jpg"
           ],
           "rating": 5,
-          "category": "Dining",
-          "description": "NOTE:Each product is unique and handcrafted and the actual product may slightly vary from the images displayed due to their artisanal nature.\nthe striking mustard-colored cup and kettle set brings a vibrant touch of retro charm to any kitchen or dining space. The set consists of a generously sized teacup and a matching kettle, both with a smooth finish in a rich mustard hue. The cup features a wide, comfortable handle and a gently tapered shape that fits comfortably in the hand, while the kettle boasts a sleek, rounded silhouette with a long, curved spout for pouring.\nThis coordinated set seamlessly blends form and function, offering both aesthetic appeal and practical use for tea enthusiasts. The bold mustard color adds a warm, inviting element to your tableware collection, evoking the cozy atmosphere of a vintage café or a sun-drenched countryside.\nSONCHIDIYA - EMBRACING THE TUNES AND RHYTHMS OF TRADITION\n1.Environment Friendly - Sonchidiya believes in enhancing the beauty of handicraft products because of their eco-friendly nature and the preparation of products is exquisitely done by majestic Artisans.\n2. Emphasizing Uniqueness - Our designs and crafts are worthy enough to be kept in exclusive frame and have reliable quality assuring complete trust.\n3. Empowering Employment - We focus on exploring skills and talents ensuring opportunities for growth.\n4. Diversity - Our Range of Products speaks to every customer.\n5. Preservation of Cultural Heritage - Our handicrafts reflects the rich cultural heritage of the country.\n6. Boost to Art and Creativity - Our Products encourage the artistic expression and creativity associated with innovative designs and artistic landscape."
+          "category": "Pottery",
+          "description": "Celebrate the festive season with our Pottery Mug - Candy Cane. This unique mug adds a cheerful touch to your holiday gatherings."
         },
         {
-          "id":"202",
-          "name": "Gloss Finish Tea Set: 2 Cups, Kettle, and Tray",
-          "price": 850,
+          "id": "202",
+          "name": "Pottery Set - Orange",
+          "price": 900,
           "quantity": 5,
-          "coverImage": "https://i.postimg.cc/hGC61fFq/MG-9754-copy-1-min.webp",
+          "coverImage": "./assets/imgs/DB/pottery/orangeSet.jpg",
           "images": [
-            "https://i.postimg.cc/hGC61fFq/MG-9754-copy-1-min.webp",
-            "https://i.postimg.cc/8CkxvL0H/MG-5115.webp",
-            "https://i.postimg.cc/wv7PfgHR/MG-5112.webp",
-            "https://i.postimg.cc/CxsWdcm5/MG-5110.webp",
-            "https://i.postimg.cc/t4jKXKd8/MG-5105.webp"
+            "./assets/imgs/DB/pottery/orangeSet.jpg",
+            "./assets/imgs/DB/pottery/orangeSet.jpg",
+            "./assets/imgs/DB/pottery/orangeSet.jpg",
+            "./assets/imgs/DB/pottery/orangeSet.jpg",
+            "./assets/imgs/DB/pottery/orangeSet.jpg"
           ],
           "rating": 5,
-          "category": "Dining",
-          "description": "NOTE:Each product is unique and handcrafted and the actual product may slightly vary from the images displayed due to their artisanal nature.\nIntroduce an element of bold artistry to your dining experience with Sonchidiya’s handcrafted ceramic condiment set. This vibrant duo includes two meticulously designed jars with lids and matching spoons, elegantly perched on a flowing ceramic tray. The striking combination of rich red tones and intricate black-and-white patterns reflects the traditional craftsmanship of Khurja artisans, making this set a stunning centerpiece for any table.\nEach jar is crafted from high-quality ceramic, ensuring durability while maintaining a polished, refined finish. The handcrafted detailing, evident in the swirling leaf motifs, adds a unique flair that elevates the aesthetic appeal of this set. Perfectly sized for holding spices, sauces, or pickles, these jars offer both functionality and style, making them a versatile addition to your kitchen or dining space.\nThe ergonomic design of the spoons and lids ensures ease of use, while the matching tray keeps everything neatly organized. Whether hosting a festive dinner or enjoying a casual meal, this ceramic condiment set effortlessly combines practicality with artistic elegance. Add a touch of handcrafted luxury to your home with Sonchidiya’s beautifully crafted ceramic pickle set, and celebrate the legacy of Indian artistry with every meal.\nSONCHIDIYA - EMBRACING THE TUNES AND RHYTHMS OF TRADITION\n1.Environment Friendly - Sonchidiya believes in enhancing the beauty of handicraft products because of their eco-friendly nature and the preparation of products is exquisitely done by majestic Artisans.\n2. Emphasizing Uniqueness - Our designs and crafts are worthy enough to be kept in exclusive frame and have reliable quality assuring complete trust.\n3. Empowering Employment - We focus on exploring skills and talents ensuring opportunities for growth.\n4. Diversity - Our Range of Products speaks to every customer.\n5. Preservation of Cultural Heritage - Our handicrafts reflects the rich cultural heritage of the country.\n6. Boost to Art and Creativity - Our Products encourage the artistic expression and creativity associated with innovative designs and artistic landscape."
+          "category": "Pottery",
+          "description": "Introduce a vibrant touch to your kitchen with our Pottery Set - Orange. Handcrafted with care, this set is perfect for serving your favorite dishes."
         }
       ]
     },
@@ -387,150 +377,150 @@
       ],
       "sellingProducts": [
         {
-          "id":"31",
-          "name": "Regal Retreat Chair",
-          "price": 2750,
+          "id": "31",
+          "name": "Gemstone Rings - Gold",
+          "price": 2800,
           "quantity": 20,
-          "coverImage": "https://i.postimg.cc/K87FZxGn/HT-001-9194c64e-7d3d-441c-9fd9-0e74d8b96a58.jpg",
+          "coverImage": "https://bijouxlasotita.com/cdn/shop/files/image_6be2a2df-4879-42cd-9ce5-c129ffeca483.jpg?v=1748912368&width=823",
           "images": [
-            "https://i.postimg.cc/K87FZxGn/HT-001-9194c64e-7d3d-441c-9fd9-0e74d8b96a58.jpg",
-            "https://i.postimg.cc/NjvBq5cs/HT-002-8b7feb2c-96fc-41e2-81d6-4ee2ae321a28.jpg",
-            "https://i.postimg.cc/MGdSQ5jH/HT-003-fd6e78d2-e7c7-4eb6-b76e-c8210dbc5d0d.jpg",
-            "https://i.postimg.cc/GpcRtVt6/HT-005-2247ad9e-2932-4702-ab2b-696c2d50d8d4.jpg"
+            "https://bijouxlasotita.com/cdn/shop/files/image_6be2a2df-4879-42cd-9ce5-c129ffeca483.jpg?v=1748912368&width=823",
+            "https://bijouxlasotita.com/cdn/shop/files/image_6be2a2df-4879-42cd-9ce5-c129ffeca483.jpg?v=1748912368&width=823",
+            "https://bijouxlasotita.com/cdn/shop/files/image_6be2a2df-4879-42cd-9ce5-c129ffeca483.jpg?v=1748912368&width=823",
+            "https://bijouxlasotita.com/cdn/shop/files/image_6be2a2df-4879-42cd-9ce5-c129ffeca483.jpg?v=1748912368&width=823"
           ],
-          "rating": 14,
-          "category": "Casual-Seating",
-          "description": "Sink into the plush, generously cushioned seat and let the world melt away. The ergonomic design cradles your body in perfect comfort, supporting your back for hours of relaxation. Beyond its luxurious comfort, the Regal Retreat Chair is a statement piece that elevates any interior. From classic to contemporary, this chair effortlessly blends in while adding a touch of regal opulence. The Regal Retreat Chair promises to be your personal sanctuary.\nMaterial- Velvet seat & Steel Legs\nDimension- 30x26x38 inch\nshipping time is 10 to 12 days\nHandmade"
+          "rating": 4.5,
+          "category": "Accessories",
+          "description": "Adorn your fingers with our exquisite Gemstone Rings - Gold. Each ring is handcrafted with precision, featuring stunning gemstones that catch the light beautifully. Perfect for any occasion, these rings add a touch of elegance and sophistication to your style."
         },
         {
-          "id":"32",
-          "name": "Forest Green Velvet Chair",
-          "price": 1999,
+          "id": "32",
+          "name": "Elegante Gemstone Ring Set",
+          "price": 950,
           "quantity": 15,
-          "coverImage": "https://i.postimg.cc/ZnynH2rV/HT-001-1778689d-d237-4c43-9cf1-6d85989f074b.jpg",
+          "coverImage": "https://bijouxlasotita.com/cdn/shop/files/image_8e686dd6-85df-4b2a-a2be-d261eb333d9a.jpg?v=1748912339&width=823",
           "images": [
-            "https://i.postimg.cc/ZnynH2rV/HT-001-1778689d-d237-4c43-9cf1-6d85989f074b.jpg",
-            "https://i.postimg.cc/wvM7y73K/HT-003-2a19fe56-4e90-44ab-8096-ca7dade27ff5.jpg",
-            "https://i.postimg.cc/C12djSfR/HT-004-685640a7-9f05-4c58-8c26-4385355cce31.jpg",
-            "https://i.postimg.cc/wB01jhqc/HT-005-e9c2fb1b-2ae9-4a5b-a35a-62b74650a902.jpg"
+            "https://bijouxlasotita.com/cdn/shop/files/image_8e686dd6-85df-4b2a-a2be-d261eb333d9a.jpg?v=1748912339&width=823",
+            "https://bijouxlasotita.com/cdn/shop/files/image_8e686dd6-85df-4b2a-a2be-d261eb333d9a.jpg?v=1748912339&width=823",
+            "https://bijouxlasotita.com/cdn/shop/files/image_8e686dd6-85df-4b2a-a2be-d261eb333d9a.jpg?v=1748912339&width=823",
+            "https://bijouxlasotita.com/cdn/shop/files/image_8e686dd6-85df-4b2a-a2be-d261eb333d9a.jpg?v=1748912339&width=823"
           ],
           "rating": 5,
-          "category": "Casual-Seating",
-          "description": "Whether you're curling up with a good book or enjoying a quiet moment of relaxation, the Forest Green Velvet Haven chair promises to be your personal sanctuary. Its inviting design and exceptional comfort make it a must-have for those seeking to elevate their living space.\nMaterial- Velvet Seat & Steels Legs\nDimension- 28x17x30 inch\nShipping time is 10 to 12 days\nHandmade"
+          "category": "Accessories",
+          "description": "Elevate your accessory game with our Elegante Gemstone Ring Set. This stunning collection features beautifully crafted rings that are perfect for stacking or wearing alone. Each piece is designed to make a statement and enhance your personal style."
         },
         {
-          "id":"33",
-          "name": "Camel Haze Lounge Chair",
-          "price": 2585,
+          "id": "33",
+          "name": "Mykonos Necklace",
+          "price": 550,
           "quantity": 10,
-          "coverImage": "https://i.postimg.cc/Mp0Dtr56/HT-001-9c36014d-606a-41ff-9f4e-e12673f57148.jpg",
+          "coverImage": "https://bijouxlasotita.com/cdn/shop/files/image_71ff50c1-1552-4ccf-a4fa-90ba16c7781b.jpg?v=1748912310&width=823",
           "images": [
-            "https://i.postimg.cc/Mp0Dtr56/HT-001-9c36014d-606a-41ff-9f4e-e12673f57148.jpg",
-            "https://i.postimg.cc/QdZmQrpY/HT-002-ca3b6f45-21a9-4d0d-a6d1-9c6826a8a365.jpg",
-            "https://i.postimg.cc/rp89HCZS/HT-003-05a0571a-9d8e-4e4a-948c-a312cbd82137.jpg",
-            "https://i.postimg.cc/7LmNrGjj/HT-004-2295de67-07c0-4421-9570-5b23254cc403.jpg",
-            "https://i.postimg.cc/63qfW6Xq/HT-005-beef7697-f76c-44b1-9915-f903746c57eb.jpg",
-            "https://i.postimg.cc/Px7zPGX4/HT-06.jpg"
+            "https://bijouxlasotita.com/cdn/shop/files/image_71ff50c1-1552-4ccf-a4fa-90ba16c7781b.jpg?v=1748912310&width=823",
+            "https://bijouxlasotita.com/cdn/shop/files/image_71ff50c1-1552-4ccf-a4fa-90ba16c7781b.jpg?v=1748912310&width=823",
+            "https://bijouxlasotita.com/cdn/shop/files/image_71ff50c1-1552-4ccf-a4fa-90ba16c7781b.jpg?v=1748912310&width=823",
+            "https://bijouxlasotita.com/cdn/shop/files/image_71ff50c1-1552-4ccf-a4fa-90ba16c7781b.jpg?v=1748912310&width=823",
+            "https://bijouxlasotita.com/cdn/shop/files/image_71ff50c1-1552-4ccf-a4fa-90ba16c7781b.jpg?v=1748912310&width=823",
+            "https://bijouxlasotita.com/cdn/shop/files/image_71ff50c1-1552-4ccf-a4fa-90ba16c7781b.jpg?v=1748912310&width=823"
           ],
           "rating": 5,
-          "category": "Casual-Seating",
-          "description": "Indulge in the epitome of relaxation with the Camel Haze Lounge Chair. This meticulously crafted piece is more than just furniture it's an invitation to unwind and embrace tranquility. The cool, inviting orange hue whispers of sophistication, seamlessly blending into any decor. The contrasting steel base add a touch of modern elegance, its sleek lines forming a sturdy foundation for unparalleled comfort.\nMaterial- Velvet seat And Steel Leg\nDimension- 30x28x31 inch\nHandmade \nShipping time is 10 to 12 days"
+          "category": "Accessories",
+          "description": "Make a bold statement with the Mykonos Necklace. This beautifully designed piece features intricate details and vibrant colors, perfect for adding a pop of personality to any outfit. Handcrafted with care, it’s a must-have for jewelry lovers."
         },
         {
-          "id":"34",
-          "name": "Modern Majesty Chair",
-          "price": 1960,
-          "quantity": 0,
-          "coverImage": "https://i.postimg.cc/76JX1PQc/HT-001-e6463c8c-6417-498a-82c1-4b37f2e551e0.jpg",
-          "images": [
-            "https://i.postimg.cc/76JX1PQc/HT-001-e6463c8c-6417-498a-82c1-4b37f2e551e0.jpg",
-            "https://i.postimg.cc/rs6jf6Bp/HT-002-36a987d5-93ce-42d5-b15c-e5ae03519c2e.jpg",
-            "https://i.postimg.cc/cJbX8tTw/HT-005-d0dd9eb5-3e36-491c-b810-99cb234f808a.jpg"
-          ],
-          "rating": 5,
-          "category": "Casual-Seating",
-          "description": "Unwind in the timeless elegance of the Modern Majesty Chair. This captivating piece seamlessly blends modern design with unparalleled comfort, creating a statement focal point in any living space. The sleek grey hue exudes a sense of sophisticated neutrality that complements any decor. Whether you're curling up with a good book or enjoying a quiet conversation, this chair promises to become your haven of relaxation.\nMaterial- Iron 100% rust proof \nDimension- 20x19x29 inch\nShipping time is 10 to 12 days \nHandmade "
-        },
-        {
-          "id":"35",
-          "name": "Contemporary Comfort Chair",
-          "price": 2499,
+          "id": "34",
+          "name": "Daisy Bracelet",
+          "price": 400,
           "quantity": 1,
-          "coverImage": "https://i.postimg.cc/ZqSt7HmS/HT-002-8a49a128-7487-4188-bbeb-bffda5f1a0ac.jpg",
+          "coverImage": "./assets/imgs/DB/Accessories/daisyBr.jpg",
           "images": [
-            "https://i.postimg.cc/ZqSt7HmS/HT-002-8a49a128-7487-4188-bbeb-bffda5f1a0ac.jpg",
-            "https://i.postimg.cc/tgN0L6RV/HT-005-35032941-8a4d-415d-a04e-5e2e7783af04.jpg",
-            "https://i.postimg.cc/MTZkxGX3/HT-006.jpg"
+            "./assets/imgs/DB/Accessories/daisyBr.jpg",
+            "./assets/imgs/DB/Accessories/daisyBr.jpg",
+            "./assets/imgs/DB/Accessories/daisyBr.jpg"
           ],
           "rating": 5,
-          "category": "Casual-Seating",
-          "description": "The chair's sleek metal legs offer a striking contrast to the soft velvet, creating a visually appealing balance of materials. This harmonious blend of textures and finish result in a truly captivating piece of furniture. Crafted with meticulous attention to detail, the Contemporary Comfort Chair exudes a sense of understated elegance. The luxurious velvet upholstery in a captivating green hue envelops you in a soft, inviting embrace. \nMaterial- Velvet Seat and Iron legs 100% rust proof\nDimension- 32x32x38 Inch\nShipping time is 8 to 10 days\nHandmade "
+          "category": "Accessories",
+          "description": "Adorn your wrist with the charming Daisy Bracelet. This delicate piece features beautiful floral designs that add a touch of whimsy to your look. Perfect for everyday wear or special occasions, it’s a lovely addition to any jewelry collection."
         },
         {
-          "id":"36",
-          "name": "Cozy Corner Chair Pink",
-          "price": 2333,
-          "quantity": 3,
-          "coverImage": "https://i.postimg.cc/3RHGwdGh/HT-001-6d74d0d1-72dc-4c13-a0d5-044b582df494.jpg",
-          "images": [
-            "https://i.postimg.cc/3RHGwdGh/HT-001-6d74d0d1-72dc-4c13-a0d5-044b582df494.jpg",
-            "https://i.postimg.cc/pdj8xDpk/HT-002-13975a14-ee3d-49c8-9365-5c5fbe1cdb01.jpg",
-            "https://i.postimg.cc/1326LW5f/HT-004-b9938202-618e-44a7-8acc-984568d59cbd.jpg",
-            "https://i.postimg.cc/MpvV3kwC/HT-005-305f7561-a4af-4435-a37a-41029ec5609c.jpg"
-          ],
-          "rating": 5,
-          "category": "Casual-Seating",
-          "description": "Discover unparalleled comfort and style with the Cozy Corner Chair Pink. This inviting piece is meticulously crafted to transform any space into your personal sanctuary. This chair offers a touch of luxury that is both soft and sophisticated. Sink into the plush cushions and let the world melt away. The sturdy metal legs offer a contemporary touch.\nMaterial - Velvet Seat & Steel Leg\nDimension- 28x27x29 Inch\nShipping time is 8 to 10 days\nHandmade"
-        },
-        {
-          "id":"37",
-          "name": "Luxurious Blue & White Gloss Finish Tea Set – 2 Cups, Kettle, Tray",
+          "id": "35",
+          "name": "Pearl Bow Knot Necklace",
           "price": 850,
-          "quantity": 6,
-          "coverImage": "https://i.postimg.cc/NjXjVvsV/MG-9791-copy-min.webp",
+          "quantity": 1,
+          "coverImage": "./assets/imgs/DB/Accessories/PearlBow.jpg",
           "images": [
-            "https://i.postimg.cc/NjXjVvsV/MG-9791-copy-min.webp",
-            "https://i.postimg.cc/VLpNDk8n/MG-5124.webp",
-            "https://i.postimg.cc/fbhRQqkb/MG-5122.webp",
-            "https://i.postimg.cc/T2k15cNk/MG-5118.webp",
-            "https://i.postimg.cc/HsVxw7fT/MG-5117.webp"
+            "./assets/imgs/DB/Accessories/PearlBow.jpg",
+            "./assets/imgs/DB/Accessories/PearlBow.jpg",
+            "./assets/imgs/DB/Accessories/PearlBow.jpg"
           ],
           "rating": 5,
-          "category": "Dining",
-          "description": "NOTE:Each product is unique and handcrafted and the actual product may slightly vary from the images displayed due to their artisanal nature.\nIntroduce an element of bold artistry to your dining experience with Sonchidiya’s handcrafted ceramic condiment set. This vibrant duo includes two meticulously designed jars with lids and matching spoons, elegantly perched on a flowing ceramic tray. The striking combination of rich red tones and intricate black-and-white patterns reflects the traditional craftsmanship of Khurja artisans, making this set a stunning centerpiece for any table.\nEach jar is crafted from high-quality ceramic, ensuring durability while maintaining a polished, refined finish. The handcrafted detailing, evident in the swirling leaf motifs, adds a unique flair that elevates the aesthetic appeal of this set. Perfectly sized for holding spices, sauces, or pickles, these jars offer both functionality and style, making them a versatile addition to your kitchen or dining space.\nThe ergonomic design of the spoons and lids ensures ease of use, while the matching tray keeps everything neatly organized. Whether hosting a festive dinner or enjoying a casual meal, this ceramic condiment set effortlessly combines practicality with artistic elegance. Add a touch of handcrafted luxury to your home with Sonchidiya’s beautifully crafted ceramic pickle set, and celebrate the legacy of Indian artistry with every meal.\nSONCHIDIYA - EMBRACING THE TUNES AND RHYTHMS OF TRADITION\n2. Emphasizing Uniqueness - Our designs and crafts are worthy enough to be kept in exclusive frame and have reliable quality assuring complete trust.\n3. Empowering Employment - We focus on exploring skills and talents ensuring opportunities for growth.\n4. Diversity - Our Range of Products speaks to every customer.\n5. Preservation of Cultural Heritage - Our handicrafts reflects the rich cultural heritage of the country.\n6. Boost to Art and Creativity - Our Products encourage the artistic expression and creativity associated with innovative designs and artistic landscape"
+          "category": "Accessories",
+          "description": "The Pearl Bow Knot Necklace is a stunning piece that combines elegance with a playful twist. Crafted with high-quality pearls, this necklace is perfect for adding a touch of sophistication to any outfit. Ideal for both casual and formal occasions."
         },
         {
-          "id":"38",
-          "name": "Candle - Redgrapes",
-          "price": 335,
+          "id": "36",
+          "name": "Pearl Set - Pink",
+          "price": 2500,
           "quantity": 3,
-          "coverImage": "https://i.postimg.cc/j2h8YXTJ/candle-02.jpg",
+          "coverImage": "./assets/imgs/DB/Accessories/Pinkset.jpg",
           "images": [
-            "https://i.postimg.cc/j2h8YXTJ/candle-02.jpg",
-            "https://i.postimg.cc/XqW2PPRb/candle.jpg"
+            "./assets/imgs/DB/Accessories/Pinkset.jpg",
+            "./assets/imgs/DB/Accessories/Pinkset.jpg",
+            "./assets/imgs/DB/Accessories/Pinkset.jpg",
+            "./assets/imgs/DB/Accessories/Pinkset.jpg"
           ],
           "rating": 5,
-          "category": "Candle",
-          "description": "Enjoy a Peaceful Atmosphere with Natural Scented Soy Wax – Red Grape Aroma\nHand-poured with love, this candle features a sweet red grape scent blended with notes of berries and fresh fruits.\nDecorated with charming heart-shaped wax details and topped with an elegant wooden lid, it adds a stylish, calming touch to any space.\nJar Capacity: 200 g\nUsage Instructions:\n- Always light all wicks at the same time\n- Do not burn for more than 3 hours at a time\nThis product is handmade, so slight variations may occur, making each piece uniquely special."
+          "category": "Accessories",
+          "description": "Discover the beauty of our Pearl Set - Pink. This exquisite set includes a necklace and matching earrings, perfect for adding a touch of elegance to any outfit. Handcrafted with care, it’s a beautiful gift for yourself or a loved one."
         },
         {
-          "id":"39",
-          "name": "Soy Wax Candle with Pine Scent- XL",
-          "price": 420,
-          "quantity": 5,
-          "coverImage": "https://i.postimg.cc/1Xzpc3Zb/candle-2.jpg",
+          "id": "37",
+          "name": "Beaded Bracelet - White",
+          "price": 900,
+          "quantity": 6,
+          "coverImage": "./assets/imgs/DB/Accessories/BeadedBr.jpg",
           "images": [
-            "https://i.postimg.cc/1Xzpc3Zb/candle-2.jpg",
-            "https://i.postimg.cc/PxyWw80m/candle-2.jpg"
+            "./assets/imgs/DB/Accessories/BeadedBr.jpg",
+            "./assets/imgs/DB/Accessories/BeadedBr.jpg",
+            "./assets/imgs/DB/Accessories/BeadedBr.jpg",
+            "./assets/imgs/DB/Accessories/BeadedBr.jpg",
+            "./assets/imgs/DB/Accessories/BeadedBr.jpg"
+          ],
+          "rating": 5,
+          "category": "Accessories",
+          "description": "NOTE: Each product is unique and handcrafted, and the actual product may slightly vary from the images displayed due to their artisanal nature. The Beaded Bracelet - White is a stunning piece that adds a touch of elegance to any outfit. Perfect for layering or wearing alone, it’s a versatile addition to your jewelry collection."
+        },
+        {
+          "id": "38",
+          "name": "Soy Wax Candle - Pink Set",
+          "price": 1600,
+          "quantity": 3,
+          "coverImage": "./assets/imgs/DB/Candles/1.jpg",
+          "images": [
+            "./assets/imgs/DB/Candles/1.jpg",
+            "./assets/imgs/DB/Candles/1.jpg"
           ],
           "rating": 5,
           "category": "Candle",
-          "description": "V - 525 ml\nØ – 80 mm\nH – 80 mm\nBurn time– 45 h\nIngredients: natural soy wax, lead-free cotton wick, amber pieces, pine essential oil\nFragrance: Pine with notes of salt water\n! Each candle is handmade, and every plant is carefully harvested by hand during different seasons. Due to the natural materials, each product is unique and may not match what is shown in the picture. The image is for illustrative purposes."
-        }, 
+          "description": "Enjoy a peaceful atmosphere with our Soy Wax Candle - Pink Set. Hand-poured with love, these candles feature a delightful red grape aroma blended with notes of berries and fresh fruits. Perfect for creating a calming ambiance in any space."
+        },
         {
-          "id":"301",
+          "id": "39",
+          "name": "Soy Wax Candle - Rainbow",
+          "price": 450,
+          "quantity": 5,
+          "coverImage": "./assets/imgs/DB/Candles/2.jpg",
+          "images": [
+            "./assets/imgs/DB/Candles/2.jpg",
+            "./assets/imgs/DB/Candles/2.jpg"
+          ],
+          "rating": 5,
+          "category": "Candle",
+          "description": "Experience the vibrant fragrance of our Soy Wax Candle - Rainbow. Each candle is handmade with natural soy wax and features a unique blend of scents, including pine and salt water. Perfect for adding a splash of color and fragrance to your home."
+        },
+        {
+          "id": "301",
           "name": "Candle - Musk",
-          "price": 300,
+          "price": 350,
           "quantity": 1,
           "coverImage": "https://i.postimg.cc/8cNYcbRN/candle-5nov8.jpg",
           "images": [
@@ -539,12 +529,12 @@
           ],
           "rating": 5,
           "category": "Candle",
-          "description": "Scented Soy Wax Candle – Vanilla Rainbow Design\nRelax and unwind with the warm, aromatic scent of vanilla wood.\nHandcrafted in a charming rainbow shape using natural soy wax, this candle brings a cozy and comforting ambiance to any room.\n\nCandle Weight: 185 g\n\nUsage Instructions:\n- Burn for no more than 2 hours at a time\n- If the wick does not fully melt on the first use, trim it carefully before relighting\n\nThis product is handmade, so slight variations may occur, making each piece uniquely special."
+          "description": "Relax and unwind with our Scented Soy Wax Candle - Musk. Handcrafted in a charming rainbow shape, this candle brings a cozy and comforting ambiance to any room. Perfect for creating a warm atmosphere."
         },
         {
-          "id":"302",
-          "name": "Set OF 2 Candles & Coaster Multi Uses - Shails",
-          "price": 380,
+          "id": "302",
+          "name": "Set of 2 Candles & Coaster Multi Uses - Shails",
+          "price": 400,
           "quantity": 2,
           "coverImage": "https://i.postimg.cc/c4KzH6YK/concret254jan4-2.jpg",
           "images": [
@@ -553,7 +543,7 @@
           ],
           "rating": 5,
           "category": "Candle",
-          "description": "Scented Candle Gift Set – Rose & Bonbon Concrete Base Design\nA charming handmade candle set featuring a rose-shaped candle and a bonbon-style candle, beautifully arranged on a handcrafted multipurpose concrete base.\nInfused with the refreshing “Shells” scent – a delightful blend of fruity notes, patchouli, amber, and enchanting musk.\nPerfect for creating a calming atmosphere and a meaningful gift to show love and appreciation, especially for mothers.\n oncrete base: handcrafted and reusable\nRose-shaped candle weight: 90 g\nBonbon-style candle weight: 80 g\nBase dimensions: 17 x 9 cm\nUsage Instructions:\n- Burn for no more than 2 hours at a time\n- If the wick does not fully melt on first use, trim it carefully before relighting\nThis product is handmade, so slight variations may occur, making each piece uniquely special."
+          "description": "Scented Candle Gift Set – Rose & Bonbon Concrete Base Design. This charming handmade candle set features a rose-shaped candle and a bonbon-style candle, beautifully arranged on a handcrafted multipurpose concrete base. Perfect for creating a calming atmosphere and a meaningful gift."
         }
       ]
     },
@@ -568,336 +558,165 @@
       ],
       "sellingProducts": [
         {
-          "id":"41",
-          "name": "Ruby Red Oasis Chair",
-          "price": 1999,
+          "id": "41",
+          "name": "Casual Crochet Tote Bag",
+          "price": 750,
           "quantity": 7,
-          "coverImage": "https://i.postimg.cc/d3ZcStW7/HT-001-2633de91-af29-47e8-b7d0-b39a29e8e954.jpg",
+          "coverImage": "./assets/imgs/DB/Bags/1.jpg",
           "images": [
-            "https://i.postimg.cc/d3ZcStW7/HT-001-2633de91-af29-47e8-b7d0-b39a29e8e954.jpg",
-            "https://i.postimg.cc/Qtt31q1J/HT-002-6572b68c-7450-4e99-baf7-7feeb994c3b7.jpg",
-            "https://i.postimg.cc/QVLZLGPf/HT-004-6454d5a5-3d8c-482e-9ed4-431bf8c03bdd.jpg",
-            "https://i.postimg.cc/nzPtkQ1b/HT-003-63d0143b-3562-4e92-b83c-a88e129cac5f.jpg"
+            "./assets/imgs/DB/Bags/1.jpg",
+            "./assets/imgs/DB/Bags/1.jpg",
+            "./assets/imgs/DB/Bags/1.jpg",
+            "./assets/imgs/DB/Bags/1.jpg"
           ],
           "rating": 5,
-          "category": "Casual-Seating",
-          "description": "Indulge in the captivating allure of the Ruby Red Oasis Chair. This exceptional piece seamlessly blend modern design with unparalleled comfrt, creating a statement focal point in any living space. The rch, crimson velvet upholstery exudes a luxurious warmth, while the sleek gold toned metal legs add a touch of contemporary glamour. Enjoying a quiet moment of relaxation, the Ruby Red Oasis Chair promises to be your personal sanctuary.\nMaterial- Velvet Seat & Steel Legs\nDimension- 20x20x33 inch\nShipping time is 8 to 10 days\nHandmade"
+          "category": "Bag",
+          "description": "Embrace style and functionality with our Casual Crochet Tote Bag. Handcrafted with care, this bag is perfect for everyday use, featuring a spacious interior and a chic design that complements any outfit."
         },
         {
-          "id":"42",
-          "name": "Cats Small Platter",
-          "price": 450,
-          "quantity": 3,
-          "coverImage": "https://i.postimg.cc/J08ZHFHG/fay-501-012-W1-1.jpg",
-          "images": [
-            "https://i.postimg.cc/J08ZHFHG/fay-501-012-W1-1.jpg",
-            "https://i.postimg.cc/mr0QBkb3/FAY-501-012-W1-2.jpg",
-            "https://i.postimg.cc/mDC7D4Dv/fay-501-012-W1.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "Our Cats Small Platter is all hand-crafted in Tunis Village, in Fayoum, Egypt. Perfect for adding a bohemian touch to your kitchen, suitable for microwave uses, dishwasher-friendly, and can just be used for decorative purposes. And coming in different colors and shapes to suit your needs. Each piece is skillfully hand-painted and finished with glazes. These plates will definitely become your favorites."
-        },
-        {
-          "id":"43",
-          "name": "Green Leaves Small Platter",
-          "price": 180,
-          "quantity": 6,
-          "coverImage": "https://i.postimg.cc/kMNhY3cY/raw-501-003-w1-1.jpg",
-          "images": [
-            "https://i.postimg.cc/kMNhY3cY/raw-501-003-w1-1.jpg",
-            "https://i.postimg.cc/FzxWY3zX/raw-501-003-w1-1.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "Our Green Leaves Small Platter is handmade by Egyptian skilled artisans in Tunis Village, Fayoum, Egypt. Perfect for just placing as a home decoration, or holding a cup of coffee, accessories storage, or any convenient use of your own. Painted, glazed and fully made by the hands of our artisans. Our plates are coming in different sizes to suit your taste. Embrace the authenticity of our Egyptian handicrafts and get your own now!"
-        },
-        {
-          "id":"44",
-          "name": "Mint Palm Tree Large Platter",
-          "price": 575,
-          "quantity": 7,
-          "coverImage": "https://i.postimg.cc/bwZghKxh/raw-501-037-W1-1-21726492-13ca-4f88-9e13-c4df0fa693d4.jpg",
-          "images": [
-            "https://i.postimg.cc/bwZghKxh/raw-501-037-W1-1-21726492-13ca-4f88-9e13-c4df0fa693d4.jpg",
-            "https://i.postimg.cc/25vxqh99/raw-501-037-W1-1.jpg",
-            "https://i.postimg.cc/bw4TN3g2/raw-501-037-W1.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "Our Mint Palm Tree Large Platter is handmade by Egyptian skilled artisans in Tunis Village, Fayoum, Egypt. Perfect for serving your favorite dishes, holding fruits, or simply as a striking home decoration piece. Each platter features elegant palm tree designs, painted, glazed and fully crafted by the hands of our talented artisans. The wide and generous shape provides enough space for various uses while offering authentic Egyptian craftsmanship. Our platter come in different sizes to suit your needs. Embrace the rich heritage of our Egyptian handicrafts and add this beautiful item to your collection now!"
-        },
-        {
-          "id":"45",
-          "name": "Royal Harmony Mughal Art Ceramic Dining Set",
-          "price": 766,
-          "quantity": 8,
-          "coverImage": "https://i.postimg.cc/brB7y4v2/MG-0059-copy-min.webp",
-          "images": [
-            "https://i.postimg.cc/brB7y4v2/MG-0059-copy-min.webp",
-            "https://i.postimg.cc/bJ3XMZcg/MG-5457-min.webp",
-            "https://i.postimg.cc/FzztQhh4/MG-5468-min.webp"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "This handcrafted dinnerware set from Sonchidiya includes dinner plates, quarter plates, soup bowls, serving bowls, ceramic spoons, and a serving pot with a bamboo handle. The intricate floral design in black and cream highlights the skill of Indian artisans, adding an elegant touch to your dining experience."
-        },
-        {
-          "id":"46",
-          "name": "Color Blast Soup Bowl With Spoon Set of 2",
-          "price": 399,
-          "quantity": 4,
-          "coverImage": "https://i.postimg.cc/wTtvXpLZ/Soup-with-Spoon-03.webp",
-          "images": [
-            "https://i.postimg.cc/wTtvXpLZ/Soup-with-Spoon-03.webp",
-            "https://i.postimg.cc/v82TxBg5/Mg2290.webp",
-            "https://i.postimg.cc/HnNkqZD6/MG-2475.webp"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "The Colour Blast Soup Bowl with Spoon features a vibrant, multi-coloured design that adds a lively touch to your table. The bowl’s bold hues and playful patterns are complemented by a matching spoon, making it perfect for enjoying soups, stews, and more with a burst of colour and fun."
-        },
-        {
-          "id":"47",
-          "name": "Candle - Flory",
-          "price": 280,
-          "quantity": 1,
-          "coverImage": "https://i.postimg.cc/fbJrpLKj/candels-n4-1.jpg",
-          "images": [
-            "https://i.postimg.cc/fbJrpLKj/candels-n4-1.jpg",
-            "https://i.postimg.cc/nLgPJJS8/candels-n13.jpg"
-          ],
-          "rating": 5,
-          "category": "Candle",
-          "description": "Scented Soy Wax Candle – Floral Aroma\nEnjoy a delightful floral fragrance that brings a sense of comfort, relaxation, and happiness to your space.\nMade from natural soy wax for a clean, long-lasting burn.\n\nUsage Instructions:\n- Burn for no more than 4 hours at a time\n- Before each relight, trim the wick to 6 mm for best performance"
-        },
-        {
-          "id":"48",
-          "name": "Gemma Earrings",
-          "price": 1570,
-          "quantity": 1,
-          "coverImage": "https://i.postimg.cc/G2Kw1pNM/Mitcha-AUG2021-2519copy.jpg",
-          "images": [
-            "https://i.postimg.cc/G2Kw1pNM/Mitcha-AUG2021-2519copy.jpg",
-            "https://i.postimg.cc/hjcWwmCz/mitcha-editorial-may-23-v2-1002.jpg",
-            "https://i.postimg.cc/bvQf3gRf/mitcha-editorial-may-23-v2-998.jpg"
-          ],
-          "rating": 5,
-          "category": "Accessories",
-          "description": "Material:\n21 Carte Gold Plated brass Fresh water Baroque pearls 2 blue opal stones.\n21 Carte Gold Plated brass handmade statement earrings with Fresh water Baroque pearls and 2 blue opal stones.\nPlease Note: This Product is Non-returnable Due to Hygiene Reasons."
-        },
-        {
-          "id":"49",
-          "name": "Spiral Ring - Soleils",
-          "price": 1780,
-          "quantity": 4,
-          "coverImage": "https://i.postimg.cc/85JKZzGJ/8323518a2c38cf7dd18d16cc6e87ab22.jpg",
-          "images": [
-            "https://i.postimg.cc/85JKZzGJ/8323518a2c38cf7dd18d16cc6e87ab22.jpg",
-            "https://i.postimg.cc/zfP2wRsY/24e0d5aa73db0887860ddd3ff65dae21.jpg"
-          ],
-          "rating": 5,
-          "category": "Accessories",
-          "description": "The perfect ring for stacking your jewelry; could be styled differently. Featuring a spiral 4 layered design.\nMaterial: Platinum Plated Sterling Silver 925\nCare instructions: Please keep away from chemicals ( perfume and creams)- Polish with a plain cloth - Please handle with care"
-        },
-        {
-          "id":"401",
-          "name": "Amal Earrings - Taleed",
-          "price": 1670,
-          "quantity": 2,
-          "coverImage": "https://i.postimg.cc/K8CJRyBm/c80565a69434475b9349900d2414e3a3-1.jpg",
-          "images": [
-            "https://i.postimg.cc/K8CJRyBm/c80565a69434475b9349900d2414e3a3-1.jpg",
-            "https://i.postimg.cc/52Xs4tHP/AMI5170.jpg"
-          ],
-          "rating": 5,
-          "category": "Accessories",
-          "description": "Material : 21 Carte Gold Plated fine brass / rose quartz / grey opal / fresh water pearls\n21 Carte Gold Plated fine brass statement earrings\nwith rose quartz, grey opal and fresh water pearls\nPlease Note: This Product is Non-returnable Due to Hygiene Reasons."
-        },
-        {
-          "id":"402",
-          "name": "Blue Ein Necklace - Minu Jewels",
-          "price": 2000,
-          "quantity": 1,
-          "coverImage": "https://i.postimg.cc/tgX7dshk/86a329529f363e3ac8a2284726c57484.jpg",
-          "images": [
-            "https://i.postimg.cc/tgX7dshk/86a329529f363e3ac8a2284726c57484.jpg",
-            "https://i.postimg.cc/DwQ8brbm/ef10559eba424fa4212afe4ca68f02d0.jpg"
-          ],
-          "rating": 5,
-          "category": "Accessories",
-          "description": "Material: Lapis with gold plated accents. Lobster clasp closure."
-        }
-      ]
-    },
-    {
-      "userId": "5",
-      "userName": "Reem",
-      "cart": [
-        {
-          "totalPrice": 0,
-          "myProducts": []
-        }
-      ],
-      "sellingProducts": [
-        {
-          "id":"51",
-          "name": "Pottery Sauce Bowl",
-          "price": 90,
-          "quantity": 6,
-          "coverImage": "https://i.postimg.cc/Sxw080kS/polymer-mug-11.jpg",
-          "images": [
-            "https://i.postimg.cc/Sxw080kS/polymer-mug-11.jpg",
-            "https://i.postimg.cc/nL7yGdhv/Screenshot-20250806-014137-Google.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "A Touch of Elegance for Your Table – Handcrafted Colored Pottery Bowl\nAdd warmth and simplicity to your table with this handmade pottery bowl. With its minimalist design and soft colors, it's perfect for serving dips, appetizers\n, or small snacks — blending functionality with beauty in every detail.\nMicrowave and dishwasher safe\nSafe for everyday use\nCapacity: 60 ml\nNot suitable for sudden thermal shock\nBest cleaned with a soft sponge\nIdeal for gatherings or daily use – practical, easy to clean, and brings a neat, elegant touch to your table setting\nPlease note: This item is handmade, so slight variations may occur, making each piece uniquely beautiful."
-        },
-        {
-          "id":"52",
-          "name": "Ring Dish",
-          "price": 190,
-          "quantity": 6,
-          "coverImage": "https://i.postimg.cc/Sxw080kS/polymer-mug-11.jpg",
-          "images": [
-            "https://i.postimg.cc/Sxw080kS/polymer-mug-11.jpg",
-            "https://i.postimg.cc/nL7yGdhv/Screenshot-20250806-014137-Google.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "Materials and Craftsmanship:\nThese items are made of pottery, which can be earthenware, stoneware, or porcelain, and are often glazed for durability and decoration. \nDecoration:\nThey feature hand-painted floral designs in various colors, including pink, yellow, and blue, adding a decorative touch."
-        },
-        {
-          "id":"53",
-          "name": "Alabaster-Rectangular-Plate",
-          "price": 440,
-          "quantity": 5,
-          "coverImage": "https://i.postimg.cc/0NdkZ5t5/ALS-502-018-1-8809aec7-d674-4003-a23d-643aaa9774b7.jpg",
-          "images": [
-            "https://i.postimg.cc/0NdkZ5t5/ALS-502-018-1-8809aec7-d674-4003-a23d-643aaa9774b7.jpg",
-            "https://i.postimg.cc/Jnr1FwgN/ALS-502-018-2-4064a22e-3b95-4901-b184-bf723e27afac.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "Our ravishing Recangular plate is hand-carved from Alabaster, the stone of the Gods. Made by Egyptian artisans in Cairo. The subtle shades of the Alabaster gives the plate an artisanal feel. Add a signature look to your dinnerware set. Perfect for serving nuts, holding potpourri, or simply enjoy its smooth earthy look when it's empty."
-        },
-        {
-          "id":"54",
-          "name": "sunshine-mug",
-          "price": 390,
-          "quantity": 2,
-          "coverImage": "https://i.postimg.cc/brpjWBTj/sunshine-mug.jpg",
-          "images": [
-            "https://i.postimg.cc/brpjWBTj/sunshine-mug.jpg",
-            "https://i.postimg.cc/hvsqB1yQ/Bol-2-2048x.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "a ceramic mug featuring a cheerful sunshine design. This is typically handmade, often using techniques like wheel-throwing, resulting in a unique and tactile item. These mugs are frequently made of stoneware and are generally microwave and dishwasher safe. The design features stylized suns, often in bright yellow or orange colors on a light-colored background\n an Oustao ceramic bowl, specifically a (Sun) design. \nHere's some information about this product for shopping:\nBrand and Design:\nIt's a ceramic bowl from Oustao, a Marseille-based brand known for decorative objects with a Mediterranean influence. The design features hand-painted sun motifs, giving it the designation. \nMaterial and Durability:\nOustao products are handmade in artisanal workshops in Portugal and are designed to be durable, made of thick porcelain, and resistant to daily wear. "
-        },
-        {
-          "id":"55",
-          "name": "Dreamcatcher Tray",
-          "price": 199,
-          "quantity": 2,
-          "coverImage": "https://i.postimg.cc/DygT4pYH/Dreamcatcher.webp",
-          "images": [
-            "https://i.postimg.cc/DygT4pYH/Dreamcatcher.webp",
-            "https://i.postimg.cc/7YD46rXS/Dreamcatcher2.webp",
-            "https://i.postimg.cc/J7jmMz31/Dreamcatcher3.webp"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "A beautiful Sheesham wood tray featuring an intricately hand-painted dreamcatcher in black by our skilled artisans. Perfect for adding a touch of elegance and charm to your home decor. Ideal for serving or as a decorative piece."
-        },
-        {
-          "id":"56",
-          "name": "fish wooden tray",
+          "id": "42",
+          "name": "Summer Bag Edition",
           "price": 500,
-          "quantity": 4,
-          "coverImage": "https://i.postimg.cc/prssRjqG/HWCP-501-019-1.jpg",
-          "images": [
-            "https://i.postimg.cc/prssRjqG/HWCP-501-019-1.jpg",
-            "https://i.postimg.cc/dQ6H2Mw2/HWCP-501-019-3.jpg",
-            "https://i.postimg.cc/ZKqfjf51/HWCP-501-019-2.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "Our fish wooden tray comes with two removable pieces with a basic plate, hand-carved out of Sheesham wood by Egyptian artisans in Hegaza, in Qena governorate. Eco-friendly, and suitable for picnics, serving nuts, and each can be used separately."
-        },
-        {
-          "id":"57",
-          "name": "Sheesham Wooden Plate",
-          "price": 575,
-          "quantity": 0,
-          "coverImage": "https://i.postimg.cc/s2SyxfF9/HWCP-501-010-9.jpg",
-          "images": [
-            "https://i.postimg.cc/s2SyxfF9/HWCP-501-010-9.jpg",
-            "https://i.postimg.cc/Tw6xD8f8/HWCP-501-010-4.jpg",
-            "https://i.postimg.cc/LX3pky8J/HWCP-501-010-5.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "Our Sheesham eco-friendly wooden plate comes in five separable pieces attached with a removable down tray, hand-carved by Egyptian artisans in Hegaza village, in Qena governorate. Suitable for picnics, catering, or serving snacks."
-        },
-        {
-          "id":"58",
-          "name": "Fan Wooden Platter",
-          "price": 800,
-          "quantity": 6,
-          "coverImage": "https://i.postimg.cc/fk4fwvYv/HWCP-501-070-2-7c57120e-7409-4c08-b2ab-892bf1977c3b.jpg",
-          "images": [
-            "https://i.postimg.cc/fk4fwvYv/HWCP-501-070-2-7c57120e-7409-4c08-b2ab-892bf1977c3b.jpg",
-            "https://i.postimg.cc/yx3T4G3d/HWCP-501-070-1-029c1f0e-d236-4853-8fc9-6f921cc9ee37.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "Own our eco-friendly 6 pieces fan shaped nuts wooden tray coming with a separable plate for your own use, hand-carved with Sheesham wood by Egyptian artisans in Hegaza in Qena governorate. Durable and perfect for serving nuts or any kind of various snacks."
-        },
-        {
-          "id":"59",
-          "name": "Pottery Mug - Deer",
-          "price": 400,
-          "quantity": 5,
-          "coverImage": "https://i.postimg.cc/gJKc2tVz/mugpronaghno11.jpg",
-          "images": [
-            "https://i.postimg.cc/gJKc2tVz/mugpronaghno11.jpg",
-            "https://i.postimg.cc/J04rD3xb/mugpronaghno7.jpg",
-            "https://i.postimg.cc/prG2D9c3/mugpronaghno8.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "For you, your friends, and pottery lovers – a beautifully hand-carved mug\nHandmade from safe, healthy, and durable pottery to accompany you at the start and end of your day.\nCapacity: 300 ml\nMicrowave and dishwasher safe\nNot suitable for sudden thermal shock\nRecommended to clean with a soft sponge\nPlease note: This item is handmade, so slight variations may occur, making each piece uniquely special."
-        },
-        {
-          "id":"501",
-          "name": "Set Of 2Pcs Of Pottery Cup Espresso",
-          "price": 460,
-          "quantity": 15,
-          "coverImage": "https://i.postimg.cc/6Qr9p6nJ/img-7285-scaled.jpg",
-          "images": [
-            "https://i.postimg.cc/6Qr9p6nJ/img-7285-scaled.jpg",
-            "https://i.postimg.cc/B6JJLWB8/img-7283-scaled.jpg"
-          ],
-          "rating": 5,
-          "category": "Dining",
-          "description": "For Espresso Lovers – Handcrafted Colored Pottery Espresso Set\nEnjoy your coffee ritual with this beautifully handmade espresso set. Crafted from colored pottery, it adds a touch of elegance to your table and makes every \ncoffee moment extra special.\nMicrowave and dishwasher safe\nSet includes: 2 cups\nSafe for everyday use\nCapacity: 100 ml per cup\nNot suitable for sudden thermal shock\nRecommended to clean with a soft sponge\nPlease note: This product is handmade, so slight variations may occur, making each piece uniquely charming."
-        },
-        {
-          "id":"502",
-          "name": "Alexandria Bracelet - Minu Jewels",
-          "price": 780,
           "quantity": 3,
-          "coverImage": "https://i.postimg.cc/MK383v2t/4026d13afdd58c1a3d02c9ddf79e8a15-1.jpg",
+          "coverImage": "./assets/imgs/DB/Bags/2.jpg",
           "images": [
-            "https://i.postimg.cc/MK383v2t/4026d13afdd58c1a3d02c9ddf79e8a15-1.jpg",
-            "https://i.postimg.cc/nh6fZgLD/6b0b7e39dae6cc4ea025e9a8a85aafa0-3.jpg",
-            "https://i.postimg.cc/VkSPxmzw/8c90c92495234435eb3a3c8671bca09b.jpg"
+            "./assets/imgs/DB/Bags/2.jpg",
+            "./assets/imgs/DB/Bags/2.jpg",
+            "./assets/imgs/DB/Bags/2.jpg"
+          ],
+          "rating": 5,
+          "category": "Bag",
+          "description": "Get ready for sunny days with our Summer Bag Edition. This stylish bag is perfect for beach outings or casual strolls, featuring vibrant colors and a lightweight design that makes it easy to carry."
+        },
+        {
+          "id": "43",
+          "name": "Summer Clutch Edition",
+          "price": 200,
+          "quantity": 6,
+          "coverImage": "./assets/imgs/DB/Bags/3.jpg",
+          "images": [
+            "./assets/imgs/DB/Bags/3.jpg",
+            "./assets/imgs/DB/Bags/3.jpg"
+          ],
+          "rating": 5,
+          "category": "Bag",
+          "description": "Add a touch of elegance to your outfit with our Summer Clutch Edition. This beautifully crafted clutch is perfect for evening outings, featuring a sleek design that holds your essentials while making a stylish statement."
+        },
+        {
+          "id": "44",
+          "name": "Pink Crochet Bag",
+          "price": 600,
+          "quantity": 7,
+          "coverImage": "./assets/imgs/DB/Bags/4.jpg",
+          "images": [
+            "./assets/imgs/DB/Bags/4.jpg",
+            "./assets/imgs/DB/Bags/4.jpg",
+            "./assets/imgs/DB/Bags/4.jpg"
+          ],
+          "rating": 5,
+          "category": "Bag",
+          "description": "Brighten your day with our Pink Crochet Bag. Handcrafted with love, this bag is not only stylish but also spacious enough to carry all your essentials, making it perfect for any occasion."
+        },
+        {
+          "id": "45",
+          "name": "Cute Ribonned Bag",
+          "price": 550,
+          "quantity": 8,
+          "coverImage": "./assets/imgs/DB/Bags/5.jpg",
+          "images": [
+            "./assets/imgs/DB/Bags/5.jpg",
+            "./assets/imgs/DB/Bags/5.jpg",
+            "./assets/imgs/DB/Bags/5.jpg"
+          ],
+          "rating": 5,
+          "category": "Bag",
+          "description": "Our Cute Ribonned Bag is the perfect accessory for any outfit. With its unique design and comfortable straps, this bag is ideal for daily use, adding a touch of charm to your look."
+        },
+        {
+          "id": "46",
+          "name": "Pottery Pot - Sun & Moon",
+          "price": 400,
+          "quantity": 4,
+          "coverImage": "./assets/imgs/DB/pottery/Sun&Moon.jpg",
+          "images": [
+            "./assets/imgs/DB/pottery/Sun&Moon.jpg",
+            "./assets/imgs/DB/pottery/Sun&Moon.jpg",
+            "./assets/imgs/DB/pottery/Sun&Moon.jpg"
+          ],
+          "rating": 5,
+          "category": "Pottery",
+          "description": "Add a touch of elegance to your home with our Pottery Pot - Sun & Moon. This beautifully crafted piece is perfect for displaying your favorite plants or as a decorative accent in any room."
+        },
+        {
+          "id": "47",
+          "name": "Boho Coaster Set",
+          "price": 700,
+          "quantity": 1,
+          "coverImage": "./assets/imgs/DB/pottery/Boho.jpg",
+          "images": [
+            "./assets/imgs/DB/pottery/Boho.jpg",
+            "./assets/imgs/DB/pottery/Boho.jpg"
+          ],
+          "rating": 5,
+          "category": "Pottery",
+          "description": "Protect your surfaces in style with our Boho Coaster Set. Handcrafted with intricate designs, these coasters add a touch of bohemian charm to your home while keeping your furniture safe."
+        },
+        {
+          "id": "48",
+          "name": "Pottery Pot - Sunshine",
+          "price": 380,
+          "quantity": 1,
+          "coverImage": "./assets/imgs/DB/pottery/SunPot.jpg",
+          "images": [
+            "./assets/imgs/DB/pottery/SunPot.jpg",
+            "./assets/imgs/DB/pottery/SunPot.jpg",
+            "./assets/imgs/DB/pottery/SunPot.jpg"
+          ],
+          "rating": 5,
+          "category": "Pottery",
+          "description": "Brighten up your space with our Pottery Pot - Sunshine. This vibrant piece is perfect for holding plants or as a decorative item, showcasing the beauty of handcrafted pottery."
+        },
+        {
+          "id": "49",
+          "name": "Boho Earrings - Set",
+          "price": 1800,
+          "quantity": 4,
+          "coverImage": "./assets/imgs/DB/Accessories/boho.jpg",
+          "images": [
+            "./assets/imgs/DB/Accessories/boho.jpg",
+            "./assets/imgs/DB/Accessories/boho.jpg"
           ],
           "rating": 5,
           "category": "Accessories",
-          "description": "Lapis, turquoise, white shell bracelet\nLobster clasp closure."
+          "description": "Complete your look with our Boho Earrings - Set. These stunning earrings feature intricate designs that add a touch of elegance and bohemian flair to any outfit."
+        },
+        {
+          "id": "401",
+          "name": "Pearl Watch - Set",
+          "price": 1700,
+          "quantity": 2,
+          "coverImage": "./assets/imgs/DB/Accessories/PearlsWatch.jpg",
+          "images": [
+            "./assets/imgs/DB/Accessories/PearlsWatch.jpg",
+            "./assets/imgs/DB/Accessories/PearlsWatch.jpg"
+          ],
+          "rating": 5,
+          "category": "Accessories",
+          "description": "Elevate your style with our Pearl Watch - Set. This exquisite watch features a beautiful design with pearl accents, making it a perfect accessory for any occasion."
+        },
+        {
+          "id": "402",
+          "name": "Daisy Earrings",
+          "price": 600,
+          "quantity": 1,
+          "coverImage": "./assets/imgs/DB/Accessories/daisyEarring.jpg",
+          "images": [
+            "./assets/imgs/DB/Accessories/daisyEarring.jpg",
+            "./assets/imgs/DB/Accessories/daisyEarring.jpg"
+          ],
+          "rating": 5,
+          "category": "Accessories",
+          "description": "Add a touch of charm to your outfit with our Daisy Earrings. Crafted with care, these earrings feature a delicate design that is perfect for everyday wear or special occasions."
         }
       ]
     }
