@@ -1,1 +1,31 @@
-<p>product-table works!</p>
+<div class="container text-center">
+  <button class="btn btn-primary my-3" [routerLink]="['/product',0]">Add product</button>
+  <div class="row my-5 gap-3" *ngIf="productList.length > 0 ; else noProducts">
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3" *ngFor="let  p of productList">
+      <div class="card" style="width: 18rem;">
+        <img [src]="p.coverImage" class="card-img-top" [alt]="p.name">
+        <div class="card-body">
+          <h5 class="card-title">Name : {{p.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary text-capitalize">Category : {{p.category}}</h6>
+          <p class="card-text">Description : {{p.description}}</p>
+        </div>
+        <div class="card-body row gap-2">
+          <div *ngFor="let  image of p.images" class=" rounded-circle p-2 col-3">
+            <img [src]="image" [alt]="p.name" class="rounded-image">
+          </div>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Price : {{p.price}}</li>
+          <li class="list-group-item">Quantity : {{p.quantity}}</li>
+        </ul>
+        <div class="card-body row gap-3">
+          <button class="btn btn-success rounded col-6" [routerLink]="['/product',p.id]">Edit</button>
+          <button class="btn btn-danger  rounded col-6" (click)="delete(p.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #noProducts>
+    <p class="text-danger h1 my-5">No products found.</p>
+  </ng-template>
+</div>

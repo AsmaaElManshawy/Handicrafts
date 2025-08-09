@@ -1,5 +1,13 @@
-<a class="card h-80" [routerLink]="['/product-details', product?.id]">
-  <img [src]="product?.coverImage" class="card-img-top" alt="{{ product?.name }}" />
+<a
+  class="card h-80"
+  [routerLink]="['/product-details', product?.id]"
+  (click)="navigateToDetails()"
+>
+  <img
+    [src]="product?.coverImage"
+    class="card-img-top"
+    alt="{{ product?.name }}"
+  />
   <div class="card-body">
     <div class="title">
       <h5 class="card-title">{{ product?.name }}</h5>
