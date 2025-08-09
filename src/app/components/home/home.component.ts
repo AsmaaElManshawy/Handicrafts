@@ -13,8 +13,7 @@ import { ProductsService } from '../../services/productService/products.service'
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  products: any[] = [];
-  newArrival: any | null = null;
+  newArrival?: any[] | null = null;
   isLoading = true;
 
   constructor(
@@ -22,23 +21,19 @@ export class HomeComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
   ngOnInit(): void {
-    this.loadAllProducts();
-  }
-  loadAllProducts() {
-    this.isLoading = true;
-    this.productsService.getAllProducts().subscribe((res: any) => {
-      this.products = res; // Store all products
-      if (this.products.length > 0) {
-        this.loadNewArrival(this.products[0].id); // Load the first product
-      }
-    });
-    console.log("product fetched");
+    this.loadNewArrival(true);
   }
 
-  loadNewArrival(id: string): void {
-    this.productsService.getById(id).subscribe(
-      (product: any) => {
-        this.newArrival = product; // Store the first product details
+  loadNewArrival(newArrival: boolean): void {
+    this.isLoading = true;
+    this.productsService.getAllProducts().subscribe(
+      (res: any) => {
+        const allUsers = res;
+        const allProducts = allUsers.flatMap((u: any) => u.sellingProducts);
+        this.newArrival = allProducts.filter(
+          (p: any) => p.new === newArrival
+        );
+        this.isLoading = false; // Store the first product details
       },
       (error) => {
         console.error('Error fetching new arrival:', error);

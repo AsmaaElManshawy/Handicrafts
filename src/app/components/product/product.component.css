@@ -9,6 +9,13 @@
 }
 .page-title p {
   text-transform: capitalize;
-  color: #577747b7;
+  color: #666;
   font-size: 1.09em;
 }
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  width: 80%;
+  margin: 0 auto;
+}
+

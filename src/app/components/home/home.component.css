@@ -95,9 +95,9 @@ main .hero .carousel .crousel-cap .btn:hover {
 /* New arrivals */
 .divider {
   margin: 10px auto 0;
-  width: 80px;
+  width: 20%;
   height: 1px;
-  background-color: var(--fourth-color);
+  background-color: #6666663f;
 }
 main .New-arrivals .top {
   text-align: center;

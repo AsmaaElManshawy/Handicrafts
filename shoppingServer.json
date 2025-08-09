@@ -55,7 +55,8 @@
           ],
           "rating": 4.8,
           "category": "Wall-Art",
-          "description": "Handwoven macramé shelf with a natural wooden plank, perfect for plants, candles, or decor. Lightweight yet sturdy, this boho-chic piece adds warmth and texture to any space."
+          "description": "Handwoven macramé shelf with a natural wooden plank, perfect for plants, candles, or decor. Lightweight yet sturdy, this boho-chic piece adds warmth and texture to any space.",
+          "new": true
         },
         {
           "id": "12",
@@ -173,7 +174,8 @@
           ],
           "rating": 5,
           "category": "Pottery",
-          "description": "Charming handmade mug in a deep cherry red glaze. A cozy companion for hot cocoa or herbal tea."
+          "description": "Charming handmade mug in a deep cherry red glaze. A cozy companion for hot cocoa or herbal tea.",
+          "new": true
         },
         {
           "id": "101",
@@ -245,7 +247,7 @@
         },
         {
           "id": "24",
-          "name": "Curved Yarn Mirror",
+          "name": "Curved Yarn Mirror - Beige",
           "price": 160,
           "quantity": 9,
           "coverImage": "./assets/imgs/DB/WallArt/mirror.jpg",
@@ -256,7 +258,8 @@
           ],
           "rating": 5,
           "category": "Wall-Art",
-          "description": "Discover the beauty of our Curved Yarn Mirror, a stunning macrame piece that adds a touch of elegance to your decor. Perfect for any room, this mirror is both functional and a work of art."
+          "description": "Discover the beauty of our Curved Yarn Mirror, a stunning macrame piece that adds a touch of elegance to your decor. Perfect for any room, this mirror is both functional and a work of art.",
+          "new": true
         },
         {
           "id": "25",
@@ -487,7 +490,8 @@
           ],
           "rating": 5,
           "category": "Accessories",
-          "description": "NOTE: Each product is unique and handcrafted, and the actual product may slightly vary from the images displayed due to their artisanal nature. The Beaded Bracelet - White is a stunning piece that adds a touch of elegance to any outfit. Perfect for layering or wearing alone, it’s a versatile addition to your jewelry collection."
+          "description": "NOTE: Each product is unique and handcrafted, and the actual product may slightly vary from the images displayed due to their artisanal nature. The Beaded Bracelet - White is a stunning piece that adds a touch of elegance to any outfit. Perfect for layering or wearing alone, it’s a versatile addition to your jewelry collection.",
+          "new": true
         },
         {
           "id": "38",
@@ -637,11 +641,11 @@
           "name": "Pottery Pot - Sun & Moon",
           "price": 400,
           "quantity": 4,
-          "coverImage": "./assets/imgs/DB/pottery/Sun&Moon.jpg",
+          "coverImage": "./assets/imgs/DB/pottery/Sun&moon.jpg",
           "images": [
-            "./assets/imgs/DB/pottery/Sun&Moon.jpg",
-            "./assets/imgs/DB/pottery/Sun&Moon.jpg",
-            "./assets/imgs/DB/pottery/Sun&Moon.jpg"
+            "./assets/imgs/DB/pottery/Sun&moon.jpg",
+            "./assets/imgs/DB/pottery/Sun&moon.jpg",
+            "./assets/imgs/DB/pottery/Sun&moon.jpg"
           ],
           "rating": 5,
           "category": "Pottery",
@@ -717,6 +721,22 @@
           "rating": 5,
           "category": "Accessories",
           "description": "Add a touch of charm to your outfit with our Daisy Earrings. Crafted with care, these earrings feature a delicate design that is perfect for everyday wear or special occasions."
+        },
+        {
+          "id": "403",
+          "name": "Pottery Ring Dish - daisy",
+          "price": 400,
+          "quantity": 4,
+          "coverImage": "./assets/imgs/DB/pottery/rings.jpg",
+          "images": [
+            "./assets/imgs/DB/pottery/rings.jpg",
+            "./assets/imgs/DB/pottery/rings.jpg",
+            "./assets/imgs/DB/pottery/rings.jpg"
+          ],
+          "rating": 5,
+          "category": "Pottery",
+          "description": "Add a touch of elegance to your home with our Pottery Ring Dish - Daisy. This beautifully crafted piece is perfect for displaying your favorite rings or as a decorative accent in any room.",
+          "new": true
         }
       ]
     }
