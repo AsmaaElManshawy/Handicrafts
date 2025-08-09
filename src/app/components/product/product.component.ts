@@ -13,12 +13,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductComponent implements OnInit {
   products: any[] = [];
+  sellerNames: any[] = [];
   isLoading = true;
 
   constructor(
     private productsService: ProductsService,
     private route: ActivatedRoute
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
@@ -35,8 +36,14 @@ export class ProductComponent implements OnInit {
     this.isLoading = true;
     this.productsService.getAllProducts().subscribe((res: any) => {
       const allUsers = res;
-      this.products = allUsers.flatMap((user: any) => user.sellingProducts);
+      this.products = allUsers.flatMap((user: any) =>
+        user.sellingProducts.map((prod: any) => ({
+          ...prod,
+          sellerName: user.userName // fixed from user.name
+        }))
+      );
       this.isLoading = false;
+
     });
   }
 

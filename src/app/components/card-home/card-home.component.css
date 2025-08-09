@@ -32,6 +32,9 @@
   position: absolute;
   z-index: 2;
   padding: 20px;
+  width: 100%;
+  min-height: 180px;
+  overflow: hidden;
 }
 p {
   text-transform: capitalize;
@@ -54,6 +57,7 @@ h5 {
   font-weight: 500;
 }
 .card .card-body .btn {
+  align-self: flex-end;
   margin: 4px 0;
   background-color: var(--fourth-color) !important;
   color: var(--text-light);

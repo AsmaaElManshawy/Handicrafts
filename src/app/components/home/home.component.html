@@ -47,14 +47,17 @@
         </div>
         <div class="divider"></div>
         <div class="bottom">
-            <div class="container text-center">
-                <div class="row row-cols-1 row-cols-md-5">
-                    <div class="col" *ngFor="let p of products">
+            <div class="container text-center" >
+                <div class="row row-cols-1 row-cols-md-5"  *ngIf="newArrival && newArrival.length > 0; else noProducts">
+                    <div class="col" *ngFor="let p of newArrival">
                         <app-card-home [product]="p"></app-card-home>
                     </div>
                 </div>
             </div>
         </div>
+        <ng-template #noProducts>
+            <div class="alert alert-danger">No new products</div>
+        </ng-template>
     </div>
     <div class="About-us">
         <div class="container">
@@ -96,9 +99,12 @@
                     <h2 class="contact-title">Contact us</h2>
                     <div class="contact-list">
                         <ul>
-                            <li><span class="icon"><i class="fa-solid fa-location-dot fa-xl"></i></span><span class="txt">23st Cairo , Egypt</span></li>
-                            <li><span class="icon"><i class="fa-solid fa-envelope fa-xl"></i></span><span class="txt"> handiicrafts&#64;gmail.com</span></li>
-                            <li><span class="icon"><i class="fa-solid fa-mobile fa-xl"></i></span><span class="txt">+20 1023456789</span></li>
+                            <li><span class="icon"><i class="fa-solid fa-location-dot fa-xl"></i></span><span
+                                    class="txt">23st Cairo , Egypt</span></li>
+                            <li><span class="icon"><i class="fa-solid fa-envelope fa-xl"></i></span><span class="txt">
+                                    handiicrafts&#64;gmail.com</span></li>
+                            <li><span class="icon"><i class="fa-solid fa-mobile fa-xl"></i></span><span class="txt">+20
+                                    1023456789</span></li>
                         </ul>
                     </div>
                     <div class="contact-buttons">

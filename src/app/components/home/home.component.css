@@ -1,4 +1,29 @@
-
+@media (max-width: 620px) {
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 620px) {
+  .hero {
+    max-width: 101%;
+    overflow-x: hidden;
+  }
+  main .hero .carousel .crousel-cap {
+    width: 100% !important;
+  }
+  main .hero .carousel .crousel-cap h1 {
+    font-size: 2.7em !important;
+  }
+  main .hero .carousel .crousel-cap p {
+    font-size: 1.1em !important;
+  }
+  main .hero .carousel .crousel-cap button {
+    font-size: 1em !important;
+    padding: 8px 19px !important;
+  }
+}
 /* Hero section */
 main .hero .carousel {
   position: relative;
@@ -68,11 +93,11 @@ main .hero .carousel .crousel-cap .btn:hover {
 }
 
 /* New arrivals */
-.divider{
-    margin: 10px auto 0;
-    width: 80px;
-    height: 1px;
-    background-color: var(--fourth-color);
+.divider {
+  margin: 10px auto 0;
+  width: 20%;
+  height: 1px;
+  background-color: #6666663f;
 }
 main .New-arrivals .top {
   text-align: center;
@@ -102,6 +127,26 @@ main .New-arrivals .bottom .row {
   --bs-gutter-x: 0.6em;
   margin-right: calc(-0.1 * var(--bs-gutter-x));
   margin-left: calc(-0.1 * var(--bs-gutter-x));
+}
+
+@media (max-width: 620px) {
+  main .New-arrivals .top h1 {
+    font-size: 2.7em;
+  }
+  main .New-arrivals .top p {
+    font-size: 1.02em;
+  }
+  main .New-arrivals .container {
+    --bs-gutter-x: 1.5rem;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+  main .New-arrivals .bottom .row {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 1rem;
+    margin-right: calc(0.3 * var(--bs-gutter-x));
+    margin-left: calc(0.3 * var(--bs-gutter-x));
+  }
 }
 /* About us */
 main .About-us {
@@ -165,6 +210,22 @@ main .About-us .container .right .desc .divider {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
   margin: 30px 0;
 }
+
+@media (max-width: 620px) {
+  main .About-us .container .left {
+    width: 90%;
+  }
+  main .About-us .container .right .desc {
+    align-items: center;
+    text-align: center;
+  }
+  main .About-us .container .right .title h2 {
+    font-size: 2.2rem;
+  }
+  main .About-us .container .right .desc .divider {
+    margin: 1.5em auto;
+  }
+}
 /* Contact section */
 .contact-section {
   position: relative;
@@ -206,12 +267,19 @@ main .About-us .container .right .desc .divider {
   max-width: 500px;
   width: 300px;
 }
-.contact-section .container .contact-us .contact-section .container .contact-us .contact-box .contact-list{
-margin-left: -10px;
-margin: 10px 0;
+.contact-section
+  .container
+  .contact-us
+  .contact-section
+  .container
+  .contact-us
+  .contact-box
+  .contact-list {
+  margin-left: -10px;
+  margin: 10px 0;
 }
-.contact-section .container .contact-us .contact-box h2{
-  font-size: 2.5em ;
+.contact-section .container .contact-us .contact-box h2 {
+  font-size: 2.5em;
   align-self: start;
   text-transform: capitalize;
 }
@@ -220,30 +288,30 @@ margin: 10px 0;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.contact-section .container .contact-us .contact-box li{
+.contact-section .container .contact-us .contact-box li {
   list-style: none;
   display: flex;
-  gap:10px;
+  gap: 10px;
   margin-bottom: 25px;
 }
-.contact-section .container .contact-us .container.contact-box li .txt{
+.contact-section .container .contact-us .container.contact-box li .txt {
   font-size: 1em;
   font-weight: 400;
   transition: all 0.2s ease-in-out;
 }
-.contact-section .container .contact-us .contact-box li:hover .icon{
+.contact-section .container .contact-us .contact-box li:hover .icon {
   color: var(--fourth-color-hover);
 }
-.contact-section .container .contact-us .contact-box li .icon{
+.contact-section .container .contact-us .contact-box li .icon {
   font-size: 0.9em;
   transition: all 0.2s ease-in-out;
 }
-.contact-section .container .contact-us .contact-box .contact-buttons{
+.contact-section .container .contact-us .contact-box .contact-buttons {
   display: flex;
   gap: 15px;
   margin: 0 10px;
 }
-.contact-section .container .contact-us .contact-box .contact-buttons button{
+.contact-section .container .contact-us .contact-box .contact-buttons button {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -254,9 +322,13 @@ margin: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.contact-section .container .contact-us .contact-box .contact-buttons button:hover{
+.contact-section
+  .container
+  .contact-us
+  .contact-box
+  .contact-buttons
+  button:hover {
   color: var(--text-light);
   background-color: var(--fourth-color-hover);
   box-shadow: 0 4px 8px var(--fourth-color-hover);
@@ -312,4 +384,42 @@ margin: 10px 0;
 
 .contact-form button:hover {
   background-color: #884ea0;
+}
+@media (max-width: 620px) {
+  .concave-bg {
+    height: 100%;
+  }
+  .contact-divider {
+    width: 64px;
+    height: 2px;
+    margin: 10px auto;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .contact-section .container {
+    flex-direction: column-reverse;
+    padding: 10px 10px;
+  }
+  .form-title {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .form-desc {
+    font-size: 1em;
+    text-align: center;
+  }
+  .contact-form textarea {
+    height: 80px;
+  }
+  .contact-form button {
+    padding: 6px 103px;
+  }
+  .contact-section .container .contact-us .contact-box {
+    align-items: center;
+  }
+  .contact-section .container .contact-us .contact-box h2 {
+    display: none;
+  }
+  .contact-section .container .contact-us .contact-box .contact-list {
+    display: none;
+  }
 }

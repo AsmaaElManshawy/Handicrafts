@@ -37,6 +37,7 @@
   z-index: 2;
   padding: 10px 20px;
   width: 100%;
+  max-height: 200px;
 }
 
 .card p {
@@ -44,21 +45,22 @@
   color: rgb(100, 100, 100);
   font-size: 0.93em;
 }
-.card .title {
+.card .spans{
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
-.card .title .seller {
+.card .seller {
   color: rgb(128, 127, 127);
   font-size: 0.8em;
   text-transform: capitalize;
-  margin: 5px 0;
+  text-align: end;
+  
 }
 .card .category {
   color: rgb(128, 127, 127);
   font-size: 0.8em;
-  display: block;
-  margin-top: -3px;
   margin-bottom: 13px;
   text-transform: capitalize;
 }
@@ -67,6 +69,9 @@
   text-transform: capitalize;
   font-size: 1.4em;
   font-weight: 500;
+  max-height: 40px;
+  overflow: clip;
+  text-overflow: ellipsis;
 }
 
 .card .card-body .card-price{

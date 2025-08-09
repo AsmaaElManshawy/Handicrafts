@@ -13,14 +13,17 @@ export class ProductsService {
   private readonly url = `${environment.baseUrl}/user`;
   // private readonly url = `${environment.baseUrl}/user/sellingProducts`;
 
-  constructor(private readonly http:HttpClient) { }
+  constructor(private readonly http: HttpClient) { }
 
-  getAllProducts(){
+  getAllProducts() {
     return this.http.get(this.url);
   }
 
-  getById(id:string){
+  getById(id: string) {
     return this.http.get(`${this.url}/${id}`);
+  }
+  getNewArrivals() {
+    return this.http.get<IProduct[]>(`${this.url}/new-arrivals`); // Adjust the endpoint as needed
   }
 
 }
