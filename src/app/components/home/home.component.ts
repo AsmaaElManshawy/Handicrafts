@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
         const allUsers = res;
         const allProducts = allUsers.flatMap((u: any) => u.sellingProducts);
         this.newArrival = allProducts.filter(
-          (p: any) => p.new === newArrival
+          (p: any) => p && p.new === newArrival
         );
         this.isLoading = false; // Store the first product details
       },

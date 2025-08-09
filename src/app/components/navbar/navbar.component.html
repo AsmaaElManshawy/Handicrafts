@@ -1,106 +1,53 @@
-<nav
-  class="navbar navbar-expand-lg"
-  [ngClass]="{ 'navbar-transparent': isTransparent }"
->
+<nav class="navbar navbar-expand-lg" [ngClass]="{ 'navbar-transparent': isTransparent }">
   <div class="container">
-    <a
-      class="navbar-brand fw-bolder"
-      [routerLink]="['/home']"
-      [ngClass]="{ 'brand-transparent': isTransparent }"
-      >HandiiCrafts</a
-    >
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <a class="navbar-brand fw-bolder" [routerLink]="['/home']"
+      [ngClass]="{ 'brand-transparent': isTransparent }">HandiiCrafts</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a
-            class="nav-link"
-            aria-current="page"
-            [ngClass]="{ 'link-transparent': isTransparent }"
-            [routerLink]="['/home']"
-            [routerLinkActive]="'activeLink fw-bolder'"
-            >Home</a
-          >
+          <a class="nav-link" aria-current="page" [ngClass]="{ 'link-transparent': isTransparent }"
+            [routerLink]="['/home']" [routerLinkActive]="'activeLink fw-bolder'">Home</a>
         </li>
         <li class="nav-item" *ngIf="isAdmin">
-          <a
-            class="nav-link"
-            [ngClass]="{ 'link-transparent': isTransparent }"
-            [routerLink]="['/adminProduct']"
-            [routerLinkActive]="'activeLink fw-bolder'"
-            >myProducts</a
-          >
+          <a class="nav-link" [ngClass]="{ 'link-transparent': isTransparent }" [routerLink]="['/adminProduct']"
+            [routerLinkActive]="'activeLink fw-bolder'">myProducts</a>
         </li>
         <li class="nav-item" *ngIf="isUser">
-          <a
-            class="nav-link"
-            *ngIf="isUser"
-            [ngClass]="{ 'link-transparent': isTransparent }"
-            [routerLink]="['/products']"
-            [routerLinkActive]="'activeLink fw-bolder'"
-            >Product</a
-          >
+          <a class="nav-link" *ngIf="isUser" [ngClass]="{ 'link-transparent': isTransparent }"
+            [routerLink]="['/products']" [routerLinkActive]="'activeLink fw-bolder'">Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" *ngIf="isUser"  [ngClass]="{'link-transparent': isTransparent}" [routerLink]="['/category']" [routerLinkActive]="'activeLink fw-bolder'">Category</a>
+          <a class="nav-link" *ngIf="isUser" [ngClass]="{'link-transparent': isTransparent}"
+            [routerLink]="['/category']" [routerLinkActive]="'activeLink fw-bolder'">Category</a>
         </li>
         <li class="nav-item" *ngIf="isAdmin">
-          <a
-            class="nav-link"
-            [ngClass]="{ 'link-transparent': isTransparent }"
-            [routerLink]="['/adminProduct']"
-            [routerLinkActive]="'activeLink fw-bolder'"
-            >myProducts</a
-          >
+          <a class="nav-link" [ngClass]="{ 'link-transparent': isTransparent }" [routerLink]="['/adminProduct']"
+            [routerLinkActive]="'activeLink fw-bolder'">myProducts</a>
         </li>
         <li class="nav-item" *ngIf="isUser">
-          <a
-            class="nav-link"
-            [ngClass]="{ 'link-transparent': isTransparent }"
-            [routerLink]="['/cart']"
-            [routerLinkActive]="'activeLink fw-bolder'"
-          >
+          <a class="nav-link" [ngClass]="{ 'link-transparent': isTransparent }" [routerLink]="['/cart']"
+            [routerLinkActive]="'activeLink fw-bolder'">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            [ngClass]="{ 'link-transparent': isTransparent }"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <a class="nav-link dropdown-toggle" [ngClass]="{ 'link-transparent': isTransparent }" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Role
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a
-                class="dropdown-item"
-                (click)="userRole(1)"
-                [routerLink]="['/products']"
-                [routerLinkActive]="'activeLink fw-bolder'"
-                >User</a
-              >
+              <a class="dropdown-item" (click)="userRole(1)"
+              (click)="navigateToUserInput()"
+                [routerLink]="['/products']" [routerLinkActive]="'activeLink fw-bolder'">User</a>
             </li>
             <li>
-              <a
-                class="dropdown-item"
-                (click)="userRole(2)"
-                [routerLink]="['/adminProduct']"
-                [routerLinkActive]="'activeLink fw-bolder'"
-                >Admin</a
-              >
+              <a class="dropdown-item" (click)="userRole(2)" [routerLink]="['/adminProduct']"
+                [routerLinkActive]="'activeLink fw-bolder'">Admin</a>
             </li>
           </ul>
         </li>

@@ -37,10 +37,12 @@ export class ProductComponent implements OnInit {
     this.productsService.getAllProducts().subscribe((res: any) => {
       const allUsers = res;
       this.products = allUsers.flatMap((user: any) =>
-        user.sellingProducts.map((prod: any) => ({
-          ...prod,
-          sellerName: user.userName // fixed from user.name
-        }))
+        Array.isArray(user.sellingProducts) ?
+          user.sellingProducts.map((prod: any) => ({
+            ...prod,
+            sellerName: user.userName // fixed from user.name
+          }))
+          : []
       );
       this.isLoading = false;
 
