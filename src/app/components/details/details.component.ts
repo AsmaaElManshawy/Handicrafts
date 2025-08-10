@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProductsService } from '../../services/productService/products.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-details',
    standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
 })
@@ -37,5 +37,9 @@ export class DetailsComponent implements OnInit {
       this.product = allProducts.find((p: any) => p.id === id);
       this.isLoading = false;
     });
+  }
+  addToCart() {
+    
+    console.log('Add to cart clicked for product:', this.product);
   }
 }

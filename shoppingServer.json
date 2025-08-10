@@ -50,8 +50,8 @@
           "coverImage": "./assets/imgs/DB/WallArt/wallArt1.jpg",
           "images": [
             "./assets/imgs/DB/WallArt/wallArt1.jpg",
-            "./assets/imgs/DB/WallArt/wallArt1-2.jpg",
-            "./assets/imgs/DB/WallArt/wallArt1-3.jpg"
+            "./assets/imgs/DB/WallArt/wallArt1.jpg",
+            "./assets/imgs/DB/WallArt/wallArt1.jpg"
           ],
           "rating": 4.8,
           "category": "Wall-Art",
@@ -66,8 +66,8 @@
           "coverImage": "./assets/imgs/DB/WallArt/wallArt2.jpg",
           "images": [
             "./assets/imgs/DB/WallArt/wallArt2.jpg",
-            "./assets/imgs/DB/WallArt/wallArt2-2.jpg",
-            "./assets/imgs/DB/WallArt/wallArt2-3.jpg"
+            "./assets/imgs/DB/WallArt/wallArt2.jpg",
+            "./assets/imgs/DB/WallArt/wallArt2.jpg"
           ],
           "rating": 4.7,
           "category": "Wall-Art",
@@ -81,8 +81,8 @@
           "coverImage": "./assets/imgs/DB/WallArt/wallArt3.jpg",
           "images": [
             "./assets/imgs/DB/WallArt/wallArt3.jpg",
-            "./assets/imgs/DB/WallArt/wallArt3-2.jpg",
-            "./assets/imgs/DB/WallArt/wallArt3-3.jpg"
+            "./assets/imgs/DB/WallArt/wallArt3.jpg",
+            "./assets/imgs/DB/WallArt/wallArt3.jpg"
           ],
           "rating": 4.6,
           "category": "Wall-Art",
@@ -96,8 +96,8 @@
           "coverImage": "./assets/imgs/DB/WallArt/wallArt4.jpg",
           "images": [
             "./assets/imgs/DB/WallArt/wallArt4.jpg",
-            "./assets/imgs/DB/WallArt/wallArt4-2.jpg",
-            "./assets/imgs/DB/WallArt/wallArt4-3.jpg"
+            "./assets/imgs/DB/WallArt/wallArt4.jpg",
+            "./assets/imgs/DB/WallArt/wallArt4.jpg"
           ],
           "rating": 4.9,
           "category": "Wall-Art",
@@ -111,8 +111,8 @@
           "coverImage": "./assets/imgs/DB/WallArt/wallArt5.jpg",
           "images": [
             "./assets/imgs/DB/WallArt/wallArt5.jpg",
-            "./assets/imgs/DB/WallArt/wallArt5-2.jpg",
-            "./assets/imgs/DB/WallArt/wallArt5-3.jpg"
+            "./assets/imgs/DB/WallArt/wallArt5.jpg",
+            "./assets/imgs/DB/WallArt/wallArt5.jpg"
           ],
           "rating": 4.7,
           "category": "Wall-Art",
@@ -126,8 +126,8 @@
           "coverImage": "./assets/imgs/DB/WallArt/wallArt6.jpg",
           "images": [
             "./assets/imgs/DB/WallArt/wallArt6.jpg",
-            "./assets/imgs/DB/WallArt/wallArt6-2.jpg",
-            "./assets/imgs/DB/WallArt/wallArt6-3.jpg"
+            "./assets/imgs/DB/WallArt/wallArt6.jpg",
+            "./assets/imgs/DB/WallArt/wallArt6.jpg"
           ],
           "rating": 4.8,
           "category": "Wall-Art",
