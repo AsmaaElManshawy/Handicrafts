@@ -16,7 +16,7 @@ import { UserService } from '../../services/user/user.service';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent implements OnInit {
+export class CartComponent {
 
   //   interface CartItem {
   //   id: number;
@@ -48,40 +48,9 @@ export class CartComponent implements OnInit {
   count: number = 0 ;
   productList!:IProduct[];
   allUsers:any
+
   constructor() {
     this.calculateTotal();
-  }
-
-  ngOnInit(): void {
-    this.getAllProducts();
-    }
-
-  getAllProducts():void{
-    this.service.getAllUsers().subscribe({
-      next:(res)=>{
-        console.log('Product List: get all products')
-        this.allUsers= res;
-        let users:IUser[] = this.allUsers
-        for (let i = 0; i < users.length; i++){
-          // let sellproduct:any = users[i].sellingProducts
-          this.productList.push(...users[i].sellingProducts)
-        }
-      },
-      error:(err) => {
-        console.log(err)
-      },
-    })
-  }
-
-  addToCart(prodID:string,prodPrice:number,count:number){
-    this.cartProducts.push({
-      productId:prodID,
-      quantity:count,
-      price:prodPrice
-    });
-    this.calculateTotal();
-    this.userCart.myProducts = this.cartProducts;
-    this.editDB();
   }
 
 
