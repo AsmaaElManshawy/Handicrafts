@@ -13,6 +13,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  constructor(private router: Router) {}
   @Input() isTransparent: boolean = false;
   isUser:boolean = true;
   isAdmin:boolean = false;
@@ -30,12 +31,15 @@ export class NavbarComponent {
     }
   }
 
+  navigateToUserInput(): void {
+    this.router.navigate(['/userInput']);
+  }
+
   ngOnInit(): void {
     localStorage.setItem('role','user');
   }
 
-  constructor(private router: Router) {}
-
+// user logic
 
   private readonly Uservice = inject(UserService)
   usersList:any;
@@ -77,7 +81,7 @@ export class NavbarComponent {
   getUserByName(name:string){
     console.log('User List: get user by name')
     let user  = this.usersList.find((u:IUser)=> u.userName.toLowerCase() == name.toLowerCase());
-    if (user == null || user == undefined) {
+    if ( user == undefined) {
       user = {
         userId: this.usersList.length.toString(),
           userName: name,
@@ -91,11 +95,6 @@ export class NavbarComponent {
       localStorage.setItem('user', JSON.stringify(user));
     }
   }
-
-  navigateToUserInput(): void {
-    this.router.navigate(['/userInput']);
-  }
-
 
   addNewUser(user:IUser): void {
     this.Uservice.addUser(user).subscribe({
