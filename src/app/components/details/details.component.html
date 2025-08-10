@@ -1,5 +1,5 @@
 <main>
-  <div class="container py-5">
+  <div class="container my-5 px-5 py-5">
     <!-- Loading Spinner -->
     <div *ngIf="isLoading" class="text-center">
       <div class="spinner-border" role="status">
@@ -10,26 +10,16 @@
     <!-- Product Details -->
     <div *ngIf="!isLoading && product" class="row">
       <!-- Product Images -->
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div class="mb-4">
-          <img
-            [src]="product.coverImage"
-            class="img-fluid rounded"
-            [alt]="product.name"
-          />
-        </div>
-        <div class="row g-2">
-          <div class="col-3" *ngFor="let image of product.images">
-            <img
-              [src]="image"
-              class="img-thumbnail"
-              [alt]="product.name"
-              style="cursor: pointer"
-            />
-          </div>
+          <img [src]="product.coverImage" class="img-fluid rounded" [alt]="product.name" />
         </div>
       </div>
-
+      <div class="col-md-1 my-1">
+        <div class="col my-2" *ngFor="let image of product.images">
+          <img [src]="image" class="img-thumbnail" [alt]="product.name" style="cursor: pointer" />
+        </div>
+      </div>
       <div class="col-md-6">
         <h2>{{ product.name }}</h2>
         <div class="d-flex align-items-center mb-3">
@@ -37,11 +27,8 @@
             <span class="text-warning">★</span> {{ product.rating }}
           </div>
           <span class="text-muted">|</span>
-          <span class="ms-2 text-success"
-            >In Stock: {{ product.quantity }}</span
-          >
+          <span class="ms-2 text-success">In Stock: {{ product.quantity }}</span>
         </div>
-
         <h3 class="mb-3">${{ product.price }}</h3>
 
         <div class="mb-4">
@@ -52,22 +39,17 @@
         <div class="mb-4">
           <h5>Category</h5>
           <p>{{ product.category }}</p>
+          <div class="d-flex mb-4">
+            <div class="me-3">
+              <label class="form-label">Quantity</label>
+              <input type="number" class="form-control" value="1" min="1" [max]="product.quantity"
+                style="width: 70px" />
+            </div>
+            <button class="btn btn-primary align-self-end" (click)="addToCart()">Add to Cart</button>
+          </div>
         </div>
 
-        <div class="d-flex mb-4">
-          <div class="me-3">
-            <label class="form-label">Quantity</label>
-            <input
-              type="number"
-              class="form-control"
-              value="1"
-              min="1"
-              [max]="product.quantity"
-              style="width: 70px"
-            />
-          </div>
-          <button class="btn btn-primary align-self-end">Add to Cart</button>
-        </div>
+
       </div>
     </div>
 
@@ -77,6 +59,6 @@
     </div>
   </div>
   <div class="text-center py-4">
-    <a routerLink="/products" class="btn btn-primary">Back to Products</a>
+    <a [routerLink]="['/products']" class="btn btn-primary">Back to Products</a>
   </div>
 </main>

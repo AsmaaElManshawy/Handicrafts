@@ -1,8 +1,11 @@
 /* Product Details Page Styles */
 main .container.py-5 {
-  max-width: 1200px;
+  max-width: 1250px;
+  max-height: 110vh;
   margin: 0 auto;
   padding: 60px 20px;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 main h2 {
@@ -32,13 +35,18 @@ main p {
 
 /* Product Images */
 main .img-fluid.rounded {
-  border-radius: 8px;
+  border-radius: 10px;
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: all 0.5s ease-in-out;
 }
 
-main .img-fluid.rounded:hover {
+main .mb-4 .img-fluid.rounded:hover {
   transform: scale(1.02);
+  margin-top: -25px;
+  transform: translateY(-20px);
 }
 
 main .img-thumbnail {
