@@ -25,12 +25,12 @@
       <p *ngIf="getQuantity.errors?.['required'] && getQuantity.touched">Quantity is required</p>
       <p *ngIf="getQuantity.errors?.['min'] && getQuantity.touched" > Quantity must be at least  <span class="fw-bolder text-decoration-underline">1</span> </p>
     </div>
-    <input type="image" class="form-control my-3" name="coverImage" placeholder="product cover image" formControlName="coverImage">
+    <input type="file" class="form-control my-3" name="coverImage" placeholder="product cover image" formControlName="coverImage">
     <div class="alert alert-danger" role="alert" *ngIf="getCoverImage.errors != null && getCoverImage.touched">
       <p *ngIf="getCoverImage.errors?.['required'] && getCoverImage.touched">Cover Image is required</p>
       <p *ngIf="getCoverImage.errors?.['minlength'] && getCoverImage.touched" > Cover Image must be at least  <span class="fw-bolder text-decoration-underline">10</span> characters</p>
     </div>
-    <input type="image" class="form-control my-3" name="images" placeholder="product images" formControlName="images">
+    <input type="file" multiple class="form-control my-3" name="images" placeholder="product images" formControlName="images">
     <div class="alert alert-danger" role="alert" *ngIf="getImages.errors != null && getImages.touched">
       <p *ngIf="getImages.errors?.['required'] && getImages.touched">Images are required</p>
       <p *ngIf="getImages.errors?.['minlength'] && getImages.touched" > Images must be at least  <span class="fw-bolder text-decoration-underline">10</span> characters</p>

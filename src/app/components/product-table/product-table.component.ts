@@ -4,6 +4,7 @@ import { RouterLink } from '@angular/router';
 import { AdminProductService } from '../../services/adminProduct/admin-product.service';
 import { IUser } from '../../interfaces/IUser/iuser';
 import { IProduct } from '../../interfaces/IProduct/iproduct';
+import { UserService } from '../../services/user/user.service';
 
 @Component({
   selector: 'app-product-table',
@@ -15,21 +16,31 @@ import { IProduct } from '../../interfaces/IProduct/iproduct';
 export class ProductTableComponent implements OnInit {
 
   private readonly service = inject(AdminProductService)
-  user:IUser = JSON.parse(localStorage.getItem('user') || '{}')
-  userID:number = Number(this.user.userId);
+  private readonly serviceU = inject(UserService)
+  // user:IUser = JSON.parse(localStorage.getItem('user') || '{}')
+  // userID:number = Number(this.user.userId);
+  // useridd:string = this.user.id;
 
-  productList:any;
+  user:any;
+  userID!:number;
+  useridd:string = "9ab8";
+
+  successMessage!:string;
+  productList!:IProduct[];
+
 
   ngOnInit(): void {
     this.getAllProducts();
   }
 
   getAllProducts():void{
-    this.service.getSellingProducts(this.user.userId).subscribe({
+    this.serviceU.getUserById(this.useridd).subscribe({
       next:(res)=>{
         console.log('Product List: get all products')
         console.log(res)
-        this.productList = res;
+        this.user = res;
+        this.productList = this.user.sellingProducts;
+        this.userID = Number(this.user.userId)
       },
       error:(err) => {
         console.log(err)
@@ -37,11 +48,12 @@ export class ProductTableComponent implements OnInit {
     })
   }
 
-  delete(id:string):void{
-    this.service.deleteSellingProduct(id,this.user.userId).subscribe({
-      next:(res)=>{
-        console.log(res);
-        this.productList = this.modifyid(id, this.productList);
+  delete(prodid:string , index:number):void{
+    this.productList = this.deleteAndModifyId(prodid, this.productList,index);
+    this.user.sellingProducts = this.productList
+    this.serviceU.editUser(this.user,this.useridd).subscribe({
+      next:()=>{
+        this.successMessage="product deleted successfully"
       },
       error:(err) => {
         console.log(err)
@@ -49,10 +61,8 @@ export class ProductTableComponent implements OnInit {
     });
   }
 
-  modifyid (delid:string, arr:IProduct[]):IProduct[]{
+  deleteAndModifyId (delid:string, arr:IProduct[] , index:number):IProduct[]{
     //  delete a produdct and update id then return new products
-    const index = arr.findIndex((p:any)=> p.id == delid)
-    console.log('index of deleted item  =  ' + index)
     arr = arr.filter((p:any)=> p.id != delid)
       for (let i = index ; i < arr.length; i++) {
         const idLength = arr[i].id.length ;

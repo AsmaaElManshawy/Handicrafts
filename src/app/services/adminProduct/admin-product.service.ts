@@ -31,8 +31,14 @@ export class AdminProductService {
     );
   }
 
+  editSellingProductsId(products: IProduct[], userId: string) {
+    return this.http.patch(
+      `${this.url}/${userId}/sellingProducts`,
+      products
+    );
+  }
+
   editSellingProduct(product: IProduct, productId: string, userId: string) {
-    product.id = productId;
     return this.http.patch(
       `${this.url}/${userId}/sellingProducts/${productId}`,
       product

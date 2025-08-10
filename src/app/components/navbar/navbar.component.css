@@ -9,7 +9,6 @@
 
 .nav-link {
   font-weight: 400;
-
   transition: all 0.1s linear;
 }
 
@@ -38,6 +37,7 @@
   color: var(--text-light) !important;
   transition: all 0.3s ease;
 }
+
 .collapse .navbar-nav {
   gap: 20px;
 }
@@ -50,12 +50,18 @@
 .link-transparent {
   color: var(--text-light) !important;
 }
+
 .link-transparent i {
   color: var(--text-light) !important;
 }
+
 .dropdown .dropdown-toggle {
   background-color: var(--fourth-color) !important;
   border-radius: 8px;
   padding: 8px 15px;
   color: var(--text-light);
+}
+
+.w-66 {
+  width: 66% !important;
 }

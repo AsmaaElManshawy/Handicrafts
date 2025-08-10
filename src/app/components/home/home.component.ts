@@ -1,7 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CardHomeComponent } from "../card-home/card-home.component";
 import { CommonModule } from '@angular/common';
-import { IProduct } from '../../interfaces/IProduct/iproduct';
 import { ActivatedRoute } from '@angular/router';
 import { ProductsService } from '../../services/productService/products.service';
 
@@ -23,7 +22,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.loadNewArrival(true);
   }
-
+  
   loadNewArrival(newArrival: boolean): void {
     this.isLoading = true;
     this.productsService.getAllProducts().subscribe(
@@ -40,4 +39,6 @@ export class HomeComponent implements OnInit {
       }
     );
   }
+
+
 }
