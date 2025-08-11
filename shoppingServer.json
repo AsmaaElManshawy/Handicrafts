@@ -35,12 +35,18 @@
     {
       "userId": "1",
       "userName": "Asmaa",
-      "cart": [
-        {
-          "totalPrice": 0,
-          "myProducts": []
-        }
-      ],
+      "cart": {
+        "myProducts": [
+          {
+            "productId": "202",
+            "name": "Pottery Set - Orange",
+            "image": "./assets/imgs/DB/pottery/orangeSet.jpg",
+            "quantity": 2,
+            "price": 900
+          }
+        ],
+        "totalPrice": 1800
+      },
       "sellingProducts": [
         {
           "id": "11",
@@ -183,12 +189,10 @@
     {
       "userId": "2",
       "userName": "Mena",
-      "cart": [
-        {
-          "totalPrice": 0,
-          "myProducts": []
-        }
-      ],
+      "cart": {
+        "myProducts": [],
+        "totalPrice": 0
+      },
       "sellingProducts": [
         {
           "id": "21",
@@ -341,7 +345,7 @@
           "id": "202",
           "name": "Pottery Set - Orange",
           "price": 900,
-          "quantity": 5,
+          "quantity": 4,
           "coverImage": "./assets/imgs/DB/pottery/orangeSet.jpg",
           "images": [
             "./assets/imgs/DB/pottery/orangeSet.jpg",
@@ -360,12 +364,10 @@
     {
       "userId": "3",
       "userName": "Sama",
-      "cart": [
-        {
-          "totalPrice": 0,
-          "myProducts": []
-        }
-      ],
+      "cart": {
+        "myProducts": [],
+        "totalPrice": 0
+      },
       "sellingProducts": [
         {
           "id": "31",
@@ -543,12 +545,10 @@
     {
       "userId": "4",
       "userName": "Nour",
-      "cart": [
-        {
-          "totalPrice": 0,
-          "myProducts": []
-        }
-      ],
+      "cart": {
+        "myProducts": [],
+        "totalPrice": 0
+      },
       "sellingProducts": [
         {
           "id": "41",
@@ -729,28 +729,6 @@
         }
       ],
       "id": "a9af"
-    },
-    {
-      "id": "6228",
-      "username": "sama",
-      "token": "ps4gaigllop"
-    },
-    {
-      "id": "b93a",
-      "username": "Sama",
-      "token": "mdefgczthxa"
-    },
-    {
-      "id": "49f1",
-      "userName": "",
-      "token": "ihuccnpvkze"
-    },
-    {
-      "id": "a254",
-      "userId": "7",
-      "userName": "asmaa",
-      "cart": {},
-      "sellingProducts": []
     }
   ]
 }

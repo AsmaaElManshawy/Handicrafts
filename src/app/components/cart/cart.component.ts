@@ -21,32 +21,24 @@ export class CartComponent implements OnInit {
 
   private readonly service = inject(UserService)
 
-  user:IUser = JSON.parse(localStorage.getItem('user') || '{}');
-  userCart:ICart = this.user.cart || { myProducts: [], totalPrice: 0 };
+  user!:IUser
+  userCart!:ICart
   totalPrice: number = 0;
-  cartItems: ICartProduct[] =  [];
+  cartItems!: ICartProduct[] ;
 
 
   constructor(private readonly router:Router) {}
 
   ngOnInit(): void {
+    this.user = JSON.parse(localStorage.getItem('user') || '{}');
+    this.userCart = this.user.cart || { myProducts: [], totalPrice: 0 };
     this.cartItems = this.userCart.myProducts;
     console.log(this.cartItems);
     this.calculateTotal();
+    this.userCart.myProducts = this.cartItems
+    this.user.cart = this.userCart
+    this.editDB();
   }
-
-  // loadCartItems(): void {
-  //   this.cartItems = this.userCart.myProducts;
-  //   this.totalItems = this.cartItems.length;
-  // }
-  // userID:number = Number(this.user.userId);
-  // useridd:string = this.user.id;
-  // cartProducts:ICartProduct[] = this.userCart.myProducts
-  // totalPrice: number = 0 ;
-  // count: number = 0 ;
-  // productList!:IProduct[];
-  // allUsers:any
-
 
   updateQuantity(itemId: string, event: Event): void {
     const input = event.target as HTMLInputElement;
@@ -56,10 +48,10 @@ export class CartComponent implements OnInit {
     if (item) {
       item.quantity = newQuantity;
       this.calculateTotal();
+      this.userCart.myProducts = this.cartItems
+      this.user.cart = this.userCart
+      this.editDB();
     }
-    this.userCart.myProducts = this.cartItems
-    this.user.cart = this.userCart
-    this.editDB();
   }
 
   removeFromCart(itemId: string): void {
@@ -73,8 +65,6 @@ export class CartComponent implements OnInit {
   calculateTotal(): void {
     this.totalPrice = this.cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
     this.userCart.totalPrice = this.totalPrice;
-    this.user.cart = this.userCart
-    this.editDB();
   }
 
   editDB(){
