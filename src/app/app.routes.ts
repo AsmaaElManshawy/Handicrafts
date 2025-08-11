@@ -10,7 +10,7 @@ import { DetailsComponent } from './components/details/details.component';
 import { UserInputComponent } from './components/user-input/user-input.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'userInput', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductComponent },
   { path: 'category', component: CategoryComponent },

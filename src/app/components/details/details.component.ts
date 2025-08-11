@@ -51,16 +51,6 @@ export class DetailsComponent implements OnInit {
       this.isLoading = false;
     }
   }
-
-  loadProductDetails(id: string) {
-    this.isLoading = true;
-    this.productsService.getAllProducts().subscribe((res: any) => {
-      const allUsers = res;
-      const allProducts = allUsers.flatMap((u: any) => u.sellingProducts);
-      this.product = allProducts.find((p: any) => p.id === id);
-      this.isLoading = false;
-    });
-  }
 // done adding in user cart and decrease count in seller product
   addToCart(prodID:string,prodPrice:number){
     console.log('from   add to cart')

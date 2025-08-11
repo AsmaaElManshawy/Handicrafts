@@ -13,7 +13,7 @@ import { RouterLink, RouterLinkActive ,Router} from '@angular/router';
 export class NavbarComponent {
   constructor(private router: Router) {}
   @Input() isTransparent: boolean = false;
-  isUser:boolean = true;
+  isUser:boolean = false;
   isAdmin:boolean = false;
 
 
@@ -29,14 +29,13 @@ export class NavbarComponent {
     }
   }
 
-  navigateToUserInput(): void {
-    this.router.navigate(['/userInput']);
-  }
-
   ngOnInit(): void {
     if (typeof window !== 'undefined' && window.localStorage) {
       // safe to use localStorage
-      localStorage.setItem('role', 'admin');
+      if (localStorage.getItem('user') !== null) {
+        localStorage.setItem('role', 'user');
+        this.isUser = true
+      }
     }
   }
 
