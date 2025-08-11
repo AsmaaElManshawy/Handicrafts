@@ -36,7 +36,10 @@ export class NavbarComponent {
   }
 
   ngOnInit(): void {
-    localStorage.setItem('role','user');
+    if (typeof window !== 'undefined' && window.localStorage) {
+      // safe to use localStorage
+      localStorage.setItem('role', 'user');
+    }
   }
 
 // user logic

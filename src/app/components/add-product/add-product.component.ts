@@ -1,5 +1,4 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { AdminProductService } from '../../services/adminProduct/admin-product.service';
 import { CommonModule } from '@angular/common';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
@@ -35,7 +34,7 @@ export class AddProductComponent  implements OnInit{
   price:number = 0;
   quantity:number = 0;
 
-  constructor( public readonly service:AdminProductService,public readonly router:Router,public readonly activatedroute:ActivatedRoute){
+  constructor(public readonly router:Router,public readonly activatedroute:ActivatedRoute){
     this.productId=this.activatedroute.snapshot.params['id']
     console.log( 'product id ==  ' + this.productId)
   }
