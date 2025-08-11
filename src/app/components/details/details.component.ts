@@ -4,17 +4,19 @@ import { ProductsService } from '../../services/productService/products.service'
 import { CommonModule } from '@angular/common';
 import { IUser, ICart, ICartProduct } from '../../interfaces/IUser/iuser';
 import { UserService } from '../../services/user/user.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-details',
    standalone: true,
-  imports: [CommonModule,RouterLink],
+  imports: [FormsModule,CommonModule,RouterLink],
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
   product: any;
   isLoading = true;
+  quantity: number = 1;
 
   constructor(
     private route: ActivatedRoute,
@@ -46,27 +48,28 @@ export class DetailsComponent implements OnInit {
     user:IUser = JSON.parse(localStorage.getItem('user') || '{}')
     userID:number = Number(this.user.userId);
     useridd:string = this.user.id;
-    userCart:ICart = this.user.cart ;
-    cartProducts:ICartProduct[] = this.userCart.myProducts
+    userCart:ICart = this.user.cart || { myProducts: [], totalPrice: 0 };
+    cartProducts:ICartProduct[] = this.userCart.myProducts || [] ;
     totalPrice: number = 0 ;
     count: number = 0 ;
 
-  addToCart(prodID:string,prodPrice:number,count:number){
+  addToCart(prodID:string,prodPrice:number){
     this.cartProducts.push({
       productId:prodID,
-      quantity:count,
+      name: this.product.name,
+      image: this.product.coverImage,
+      quantity:this.quantity,
       price:prodPrice
     });
     this.calculateTotal();
     this.userCart.myProducts = this.cartProducts;
+    console.log(this.userCart);
     this.editDB();
   }
 
   calculateTotal(): void {
-    for (let i = 0; i < this.cartProducts.length; i++) {
-      this.totalPrice += this.cartProducts[i].price * this.cartProducts[i].quantity;
-    }
-    this.userCart.totalPrice = this.totalPrice
+    this.totalPrice = this.cartProducts.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    this.userCart.totalPrice = this.totalPrice;
   }
 
   editDB(){

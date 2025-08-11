@@ -1,7 +1,6 @@
 import { Component ,inject, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { AdminProductService } from '../../services/adminProduct/admin-product.service';
 import { IUser } from '../../interfaces/IUser/iuser';
 import { IProduct } from '../../interfaces/IProduct/iproduct';
 import { UserService } from '../../services/user/user.service';
@@ -15,7 +14,6 @@ import { UserService } from '../../services/user/user.service';
 })
 export class ProductTableComponent implements OnInit {
 
-  private readonly service = inject(AdminProductService)
   private readonly serviceU = inject(UserService)
   // user:IUser = JSON.parse(localStorage.getItem('user') || '{}')
   // userID:number = Number(this.user.userId);

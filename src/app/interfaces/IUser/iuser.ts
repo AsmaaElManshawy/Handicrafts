@@ -15,6 +15,8 @@ export interface ICart {
 
 export interface ICartProduct {
   productId: string;
+  name?: string;
+  image?: string;
   quantity: number;
   price:number;
 }

@@ -6,10 +6,9 @@
   <div *ngIf="cartItems.length > 0">
     <div class="cart-items">
       <div *ngFor="let item of cartItems" class="cart-item">
-        <img [src]="item.images[0]" alt="{{ item.name }}" />
+        <img [src]="item.image" alt="{{ item.name }}" />
         <div class="item-details">
           <h3>{{ item.name }}</h3>
-          <p>{{ item.description }}</p>
           <div class="item-controls">
             <label>
               Qty:
@@ -17,10 +16,10 @@
                 type="number"
                 [value]="item.quantity"
                 min="1"
-                (input)="updateQuantity(item.id , $event)"
+                (input)="updateQuantity(item.productId, $event)"
               />
             </label>
-            <button (click)="removeFromCart(item.id)" class="remove-btn">
+            <button (click)="removeFromCart(item.productId)" class="remove-btn">
               Remove
             </button>
           </div>
