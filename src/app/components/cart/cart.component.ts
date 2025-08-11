@@ -1,7 +1,7 @@
 
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { IProduct } from '../../interfaces/IProduct/iproduct';
 import { ICart, ICartProduct, IUser } from '../../interfaces/IUser/iuser';
 import { UserService } from '../../services/user/user.service';
@@ -18,16 +18,17 @@ import { UserService } from '../../services/user/user.service';
 })
 export class CartComponent implements OnInit {
 
-  cartItems: ICartProduct[] = [];
-  totalPrice: number = 0;
 
   private readonly service = inject(UserService)
-  user:IUser = JSON.parse(localStorage.getItem('user') || '{}')
-  userCart:ICart = this.user.cart || { myProducts: [], totalPrice: 0 };
-  
 
-  constructor() {}
- 
+  user:IUser = JSON.parse(localStorage.getItem('user') || '{}');
+  userCart:ICart = this.user.cart || { myProducts: [], totalPrice: 0 };
+  totalPrice: number = 0;
+  cartItems: ICartProduct[] =  [];
+
+
+  constructor(private readonly router:Router) {}
+
   ngOnInit(): void {
     this.cartItems = this.userCart.myProducts;
     console.log(this.cartItems);
@@ -56,24 +57,31 @@ export class CartComponent implements OnInit {
       item.quantity = newQuantity;
       this.calculateTotal();
     }
+    this.userCart.myProducts = this.cartItems
+    this.user.cart = this.userCart
+    this.editDB();
   }
 
   removeFromCart(itemId: string): void {
     this.cartItems = this.cartItems.filter(item => item.productId !== itemId);
     this.calculateTotal();
     this.userCart.myProducts = this.cartItems
+    this.user.cart = this.userCart
     this.editDB();
   }
 
   calculateTotal(): void {
-     this.totalPrice = this.cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
+    this.totalPrice = this.cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
     this.userCart.totalPrice = this.totalPrice;
+    this.user.cart = this.userCart
+    this.editDB();
   }
 
   editDB(){
     this.user.cart = this.userCart
     this.service.editUser(this.user,this.user.id).subscribe({
       next:()=> {
+        localStorage.setItem('user', JSON.stringify(this.user));
         console.log('edited in database')
       },
       error:(err)=> {

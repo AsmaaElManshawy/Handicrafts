@@ -12,45 +12,46 @@ import { UserService } from '../../services/user/user.service';
   templateUrl: './product-table.component.html',
   styleUrl: './product-table.component.css'
 })
-export class ProductTableComponent implements OnInit {
+export class ProductTableComponent {
 
   private readonly serviceU = inject(UserService)
-  // user:IUser = JSON.parse(localStorage.getItem('user') || '{}')
-  // userID:number = Number(this.user.userId);
-  // useridd:string = this.user.id;
+  user:IUser = JSON.parse(localStorage.getItem('user') || '{}')
+  userID:number = Number(this.user.userId);
+  useridd:string = this.user.id;
 
-  user:any;
-  userID!:number;
-  useridd:string = "9ab8";
+  // user:any;
+  // userID!:number;
+  // useridd:string = "9ab8";
 
   successMessage!:string;
   productList!:IProduct[];
 
 
-  ngOnInit(): void {
-    this.getAllProducts();
-  }
+  // ngOnInit(): void {
+  //   this.getAllProducts();
+  // }
 
-  getAllProducts():void{
-    this.serviceU.getUserById(this.useridd).subscribe({
-      next:(res)=>{
-        console.log('Product List: get all products')
-        console.log(res)
-        this.user = res;
-        this.productList = this.user.sellingProducts;
-        this.userID = Number(this.user.userId)
-      },
-      error:(err) => {
-        console.log(err)
-      },
-    })
-  }
+  // getAllProducts():void{
+  //   this.serviceU.getUserById(this.useridd).subscribe({
+  //     next:(res)=>{
+  //       console.log('Product List: get all products')
+  //       console.log(res)
+  //       this.user = res;
+  //       this.productList = this.user.sellingProducts;
+  //       this.userID = Number(this.user.userId)
+  //     },
+  //     error:(err) => {
+  //       console.log(err)
+  //     },
+  //   })
+  // }
 
   delete(prodid:string , index:number):void{
     this.productList = this.deleteAndModifyId(prodid, this.productList,index);
     this.user.sellingProducts = this.productList
     this.serviceU.editUser(this.user,this.useridd).subscribe({
       next:()=>{
+          localStorage.setItem('user', JSON.stringify(this.user));
         this.successMessage="product deleted successfully"
       },
       error:(err) => {

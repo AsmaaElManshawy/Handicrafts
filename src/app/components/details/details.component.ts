@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { ProductsService } from '../../services/productService/products.service';
 import { CommonModule } from '@angular/common';
 import { IUser, ICart, ICartProduct } from '../../interfaces/IUser/iuser';
@@ -20,7 +20,8 @@ export class DetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private productsService: ProductsService
+    private productsService: ProductsService,
+    private readonly router:Router
   ) {}
 
   ngOnInit(): void {
@@ -76,7 +77,11 @@ export class DetailsComponent implements OnInit {
     this.user.cart = this.userCart
     this.service.editUser(this.user,this.useridd).subscribe({
       next:()=> {
+        localStorage.setItem('user', JSON.stringify(this.user));
         console.log('edited in database')
+        setTimeout(()=>{
+          this.router.navigate(['/cart'])
+        },2000)
       },
       error:(err)=> {
         console.log(err)

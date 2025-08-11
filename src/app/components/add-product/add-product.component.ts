@@ -34,7 +34,7 @@ export class AddProductComponent  implements OnInit{
   price:number = 0;
   quantity:number = 0;
 
-  constructor(public readonly router:Router,public readonly activatedroute:ActivatedRoute){
+  constructor(private readonly router:Router,private readonly activatedroute:ActivatedRoute){
     this.productId=this.activatedroute.snapshot.params['id']
     console.log( 'product id ==  ' + this.productId)
   }
@@ -110,18 +110,19 @@ export class AddProductComponent  implements OnInit{
   }
 
   reShape(input:any , status:string):IProduct{
+    // take form.value
+    let newprod:IProduct = input.value;
     if (status === 'add') {
-      this.addedProduct.id = this.addid(this.productList);
+      newprod.id = this.addid(this.productList);
     } else {
-      this.addedProduct.id = this.productId;
+      newprod.id = this.productId;
     }
     this.price = Number(input.value.price);
     this.quantity = Number(input.value.quantity);
-    this.addedProduct = input.value
-    this.addedProduct.rating = 2;
-    this.addedProduct.price = this.price;
-    this.addedProduct.quantity = this.quantity;
-    return this.addedProduct;
+    newprod.rating = 3;
+    newprod.price = this.price;
+    newprod.quantity = this.quantity;
+    return newprod;
   }
 
   onSubmit(form:any){
@@ -157,6 +158,7 @@ export class AddProductComponent  implements OnInit{
       next:()=>{
         console.log('Product List: edit Selling Product')
         this.successMessage="product updated successfully"
+          localStorage.setItem('user', JSON.stringify(this.user));
         setTimeout(()=>{
           this.router.navigate(['/adminProduct'])
         },2000)
@@ -175,6 +177,7 @@ export class AddProductComponent  implements OnInit{
         console.log('Product List: add Selling Product')
         // console.log(res);
         this.successMessage="product added successfully"
+          localStorage.setItem('user', JSON.stringify(this.user));
         setTimeout(()=>{
           this.router.navigate(['/adminProduct'])
         },2000)

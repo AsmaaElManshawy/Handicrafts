@@ -19,19 +19,22 @@ export class UserInputComponent {
   checkUser () {
     this.userService.getAllUsers().subscribe((data: any) => {
       this.users=data;
-      const foundUser  = this.users.find(user => user.userName === this.username);
+      const foundUser  = this.users.find(user => user.userName.toLowerCase() === this.username.toLowerCase());
       if (foundUser ) {
         // User found, add to local storage
-        localStorage.setItem('token', foundUser.token);
-        localStorage.setItem('username', foundUser.userName);
+        localStorage.setItem('user', JSON.stringify(foundUser));
         this.username = foundUser.userName;
         alert('User found and logged in!');
       } else {
         // User not found, create a new user
-        const newUser: any = { userName: this.username, token: this.generateToken() };
+        const newUser: any = {
+        userId: this.users.length.toString(),
+          userName: this.username,
+          cart:{},
+          sellingProducts: [],
+      };
         this.userService.addUser(newUser).subscribe(() => {
-          localStorage.setItem('token', newUser.token);
-          localStorage.setItem('username', newUser.userName);
+          localStorage.setItem('user', JSON.stringify(newUser));
           this.username = newUser.userName;
           alert('New user created and logged in!');
         });
@@ -40,10 +43,5 @@ export class UserInputComponent {
     this.router.navigate(['/home']);
   }
 
-  generateToken(): string {
-    const token = Math.random().toString(36).substring(2);
-    alert('Token generated: ' + token);
-    return token;
-  }
-  
+
 }
