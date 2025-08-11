@@ -1,40 +1,95 @@
 
 <div class="container">
   <h2 class="alert alert-success" *ngIf="successMessage">{{successMessage}}</h2>
-  <form  class="form-group my-5" formGroupName="myform" (ngSubmit)="onSubmit(myform)">
-    <input type="text" class="form-control my-3" name="name" placeholder="product name" formControlName="name">
-    <div class="alert alert-danger" role="alert" *ngIf="getName.errors != null && getName.touched">
-      <p *ngIf="getName.errors?.['required'] && getName.touched" > Name is required </p>
-      <p *ngIf="getName.errors?.['minlength'] && getName.touched" > Name must be at least  <span class="fw-bolder text-decoration-underline">3</span> characters</p>
-    </div>
-    <input type="text" class="form-control my-3" name="category" placeholder="product category" formControlName="category">
-    <div class="alert alert-danger" role="alert" *ngIf="getCategory.errors != null && getCategory.touched">
-      <p *ngIf="getCategory.errors?.['required'] && getCategory.touched" > Category is required </p>
-      <p *ngIf="getCategory.errors?.['minLength'] && getCategory.touched" > Category must be at least  <span class="fw-bolder text-decoration-underline">3</span> characters</p>
-    </div>
-    <input type="number" class="form-control my-3" name="price" placeholder="product price" formControlName="price">
-    <div class="alert alert-danger" role="alert" *ngIf="getPrice.errors?.['required'] && getPrice.touched">
-      <p>Price is required</p>
-    </div>
-    <input type="text" class="form-control my-3" name="description" placeholder="product description" formControlName="description">
-    <div class="alert alert-danger" role="alert" *ngIf="getDescription.errors?.['required'] && getDescription.touched">
-      <p>Description is required</p>
-    </div>
-    <input type="number" class="form-control my-3" name="quantity" placeholder="product quantity" formControlName="quantity">
-    <div class="alert alert-danger" role="alert" *ngIf="getQuantity.errors != null && getQuantity.touched">
-      <p *ngIf="getQuantity.errors?.['required'] && getQuantity.touched">Quantity is required</p>
-      <p *ngIf="getQuantity.errors?.['min'] && getQuantity.touched" > Quantity must be at least  <span class="fw-bolder text-decoration-underline">1</span> </p>
-    </div>
-    <input type="file" class="form-control my-3" name="coverImage" placeholder="product cover image" formControlName="coverImage">
-    <div class="alert alert-danger" role="alert" *ngIf="getCoverImage.errors != null && getCoverImage.touched">
-      <p *ngIf="getCoverImage.errors?.['required'] && getCoverImage.touched">Cover Image is required</p>
-      <p *ngIf="getCoverImage.errors?.['minlength'] && getCoverImage.touched" > Cover Image must be at least  <span class="fw-bolder text-decoration-underline">10</span> characters</p>
-    </div>
-    <input type="file" multiple class="form-control my-3" name="images" placeholder="product images" formControlName="images">
-    <div class="alert alert-danger" role="alert" *ngIf="getImages.errors != null && getImages.touched">
-      <p *ngIf="getImages.errors?.['required'] && getImages.touched">Images are required</p>
-      <p *ngIf="getImages.errors?.['minlength'] && getImages.touched" > Images must be at least  <span class="fw-bolder text-decoration-underline">10</span> characters</p>
-    </div>
-    <button class="btn btn-success my-2"type=submit>Save</button>
-  </form>
+
+  <ng-container *ngIf="productId == 0 ; else edit">
+    <form  class="form-group my-5" [formGroup]="myform" (ngSubmit)="onSubmit(myform)">
+      <input type="text" class="form-control my-3" name="name" placeholder="product name" formControlName="name">
+      <div class="alert alert-danger" role="alert" *ngIf="getName.errors != null && getName.touched">
+        <p *ngIf="getName.errors?.['required'] && getName.touched" > Name is required </p>
+        <p *ngIf="getName.errors?.['minlength'] && getName.touched" > Name must be at least  <span class="fw-bolder text-decoration-underline">3</span> characters</p>
+      </div>
+      <input type="text" class="form-control my-3" name="category" placeholder="product category" formControlName="category">
+      <div class="alert alert-danger" role="alert" *ngIf="getCategory.errors != null && getCategory.touched">
+        <p *ngIf="getCategory.errors?.['required'] && getCategory.touched" > Category is required </p>
+        <p *ngIf="getCategory.errors?.['minLength'] && getCategory.touched" > Category must be at least  <span class="fw-bolder text-decoration-underline">3</span> characters</p>
+      </div>
+      <input type="number" class="form-control my-3" name="price" placeholder="product price" formControlName="price">
+      <div class="alert alert-danger" role="alert" *ngIf="getPrice.errors?.['required'] && getPrice.touched">
+        <p>Price is required</p>
+      </div>
+      <textarea class="form-control my-3" name="description" placeholder="product description" formControlName="description"></textarea>
+      <div class="alert alert-danger" role="alert" *ngIf="getDescription.errors?.['required'] && getDescription.touched">
+        <p>Description is required</p>
+      </div>
+      <input type="number" class="form-control my-3" name="quantity" placeholder="product quantity" formControlName="quantity">
+      <div class="alert alert-danger" role="alert" *ngIf="getQuantity.errors != null && getQuantity.touched">
+        <p *ngIf="getQuantity.errors?.['required'] && getQuantity.touched">Quantity is required</p>
+        <p *ngIf="getQuantity.errors?.['min'] && getQuantity.touched" > Quantity must be at least  <span class="fw-bolder text-decoration-underline">1</span> </p>
+      </div>
+      <input type="file"  (change)="onCoverImageSelected($event)" class="form-control my-3" name="coverImage" placeholder="product cover image" formControlName="coverImage">
+      <div class="alert alert-danger" role="alert" *ngIf="getCoverImage.errors != null && getCoverImage.touched">
+        <p *ngIf="getCoverImage.errors?.['required'] && getCoverImage.touched">Cover Image is required</p>
+      </div>
+      <input type="file" multiple (change)="onImagesSelected($event)" class="form-control my-3" name="images" placeholder="product images" formControlName="images">
+      <div class="alert alert-danger" role="alert" *ngIf="getImages.errors != null && getImages.touched">
+        <p *ngIf="getImages.errors?.['required'] && getImages.touched">Images are required</p>
+      </div>
+      <button class="btn btn-success my-2"type=submit>Save</button>
+    </form>
+  </ng-container>
+      <ng-template #edit>
+        <form  class="form-group my-5" [formGroup]="editform" (ngSubmit)="onSubmit(editform)">
+        <p class="text-success h4 my-3 text-capitalize" > name </p>
+        <input type="text" class="form-control my-3" name="name" placeholder="product name" formControlName="name">
+        <div class="alert alert-danger" role="alert" *ngIf="getName.errors != null && getName.touched">
+          <p *ngIf="getName.errors?.['required'] && getName.touched" > Name is required </p>
+          <p *ngIf="getName.errors?.['minlength'] && getName.touched" > Name must be at least  <span class="fw-bolder text-decoration-underline">3</span> characters</p>
+        </div>
+        <p class="text-success h4 my-3 text-capitalize" > Category </p>
+        <input type="text" class="form-control my-3" name="category" placeholder="product category" formControlName="category">
+        <div class="alert alert-danger" role="alert" *ngIf="getCategory.errors != null && getCategory.touched">
+          <p *ngIf="getCategory.errors?.['required'] && getCategory.touched" > Category is required </p>
+          <p *ngIf="getCategory.errors?.['minLength'] && getCategory.touched" > Category must be at least  <span class="fw-bolder text-decoration-underline">3</span> characters</p>
+        </div>
+        <p class="text-success h4 my-3 text-capitalize" > price </p>
+        <input type="number" class="form-control my-3" name="price" placeholder="product price" formControlName="price">
+        <div class="alert alert-danger" role="alert" *ngIf="getPrice.errors?.['required'] && getPrice.touched">
+          <p>Price is required</p>
+        </div>
+        <p class="text-success h4 my-3 text-capitalize" > description </p>
+        <textarea class="form-control my-3" name="description" placeholder="product description" formControlName="description"></textarea>
+        <div class="alert alert-danger" role="alert" *ngIf="getDescription.errors?.['required'] && getDescription.touched">
+          <p>Description is required</p>
+        </div>
+        <p class="text-success h4 my-3 text-capitalize" > quantity </p>
+        <input type="number" class="form-control my-3" name="quantity" placeholder="product quantity" formControlName="quantity">
+        <div class="alert alert-danger" role="alert" *ngIf="getQuantity.errors != null && getQuantity.touched">
+          <p *ngIf="getQuantity.errors?.['required'] && getQuantity.touched">Quantity is required</p>
+          <p *ngIf="getQuantity.errors?.['min'] && getQuantity.touched" > Quantity must be at least  <span class="fw-bolder text-decoration-underline">1</span> </p>
+        </div>
+        <button class="btn btn-success my-2"type=submit>Save</button>
+      </form>
+    </ng-template>
 </div>
+
+
+
+    <!-- <ng-template #edit>
+      // Cover Image
+      <div>
+        <input type="file"  (change)="onCoverImageSelected($event)" class="form-control my-3" name="coverImage" placeholder="product cover image" formControlName="coverImage">
+        <p class="text-success h4 my-3 text-capitalize">cover image</p>
+        <div *ngIf="getCoverImage != null"  class="fixed-shape">
+          <img [src]="getCoverImage.value" class="fixed-shape">
+        </div>
+      </div>
+      // Multiple Images
+      <div>
+        <input type="file" multiple (change)="onImagesSelected($event)" class="form-control my-3" name="images" placeholder="product images" formControlName="images">
+        <p class="text-success h4 my-3 text-capitalize">images</p>
+        <div *ngFor="let img of getImages.value ; let i = index" class="fixed-shape">
+          <img *ngIf="img.value != null " [src]="img.value" class="fixed-shape">
+        </div>
+      </div>
+    </ng-template> -->

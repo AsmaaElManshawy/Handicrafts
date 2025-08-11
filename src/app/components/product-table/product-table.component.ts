@@ -15,36 +15,20 @@ import { UserService } from '../../services/user/user.service';
 export class ProductTableComponent {
 
   private readonly serviceU = inject(UserService)
-  user:IUser = JSON.parse(localStorage.getItem('user') || '{}')
-  userID:number = Number(this.user.userId);
-  useridd:string = this.user.id;
-
-  // user:any;
-  // userID!:number;
-  // useridd:string = "9ab8";
+  user!:IUser
+  userID!:number;
+  useridd!:string;
 
   successMessage!:string;
   productList!:IProduct[];
 
 
-  // ngOnInit(): void {
-  //   this.getAllProducts();
-  // }
-
-  // getAllProducts():void{
-  //   this.serviceU.getUserById(this.useridd).subscribe({
-  //     next:(res)=>{
-  //       console.log('Product List: get all products')
-  //       console.log(res)
-  //       this.user = res;
-  //       this.productList = this.user.sellingProducts;
-  //       this.userID = Number(this.user.userId)
-  //     },
-  //     error:(err) => {
-  //       console.log(err)
-  //     },
-  //   })
-  // }
+  ngOnInit(): void {
+    this.user = JSON.parse(localStorage.getItem('user') || '{}')
+    this.userID = Number(this.user.userId);
+    this.useridd  = this.user.id;
+    this.productList = this.user.sellingProducts;
+  }
 
   delete(prodid:string , index:number):void{
     this.productList = this.deleteAndModifyId(prodid, this.productList,index);

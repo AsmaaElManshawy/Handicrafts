@@ -59,19 +59,19 @@
           "new": true
         },
         {
-          "id": "12",
           "name": "Multicolor Large Wall Art",
+          "category": "Wall-Art",
           "price": 820,
-          "quantity": 12,
+          "description": "A vibrant macramé wall art made from hand-dyed cotton cords in multiple colors. Perfect as a bold statement piece in living rooms, studios, or creative spaces.",
+          "quantity": 15,
+          "id": "12",
           "coverImage": "./assets/imgs/DB/WallArt/wallArt2.jpg",
           "images": [
             "./assets/imgs/DB/WallArt/wallArt2.jpg",
             "./assets/imgs/DB/WallArt/wallArt2.jpg",
             "./assets/imgs/DB/WallArt/wallArt2.jpg"
           ],
-          "rating": 4.7,
-          "category": "Wall-Art",
-          "description": "A vibrant macramé wall art made from hand-dyed cotton cords in multiple colors. Perfect as a bold statement piece in living rooms, studios, or creative spaces."
+          "rating": 3
         },
         {
           "id": "13",
@@ -176,20 +176,6 @@
           "category": "Pottery",
           "description": "Charming handmade mug in a deep cherry red glaze. A cozy companion for hot cocoa or herbal tea.",
           "new": true
-        },
-        {
-          "id": "101",
-          "name": "Pottery Mug - Love",
-          "price": 390,
-          "quantity": 1,
-          "coverImage": "./assets/imgs/DB/pottery/Love mug.jpg",
-          "images": [
-            "./assets/imgs/DB/pottery/Love mug.jpg",
-            "./assets/imgs/DB/pottery/Love mug.jpg"
-          ],
-          "rating": 5,
-          "category": "Pottery",
-          "description": "Heart-themed pottery mug with a warm, hand-painted design. Perfect as a romantic gift or personal keepsake."
         }
       ],
       "id": "9ab8"
