@@ -1,7 +1,13 @@
-<div class="cart-container">
-  <h2>Your Cart</h2>
-  <div *ngIf="cartItems.length > 0">
-    <div class="cart-items">
+<div class="cart-container my-5">
+  <h1>Your Cart</h1>
+  <p>Review your selected items before proceeding to checkout.</p>
+  <div class="divider"></div>
+  <div class="empty-cart my-3" *ngIf="cartItems.length === 0">
+    <p>Your cart is empty. Start shopping!</p>
+    <a routerLink="/products" class="btn">Go to Products</a>
+  </div>
+  <div class="container my-3" *ngIf="cartItems.length > 0">
+    <div class="cart-items px-5">
       <div *ngFor="let item of cartItems" class="cart-item">
         <img [src]="item.image" alt="{{ item.name }}" />
         <div class="item-details">
@@ -9,12 +15,7 @@
           <div class="item-controls">
             <label>
               Qty:
-              <input
-                type="number"
-                [value]="item.quantity"
-                min="1"
-                (input)="updateQuantity(item.productId, $event)"
-              />
+              <input type="number" [value]="item.quantity" min="1" (input)="updateQuantity(item.productId, $event)" />
             </label>
             <button (click)="removeFromCart(item.productId)" class="remove-btn">
               Remove
@@ -26,8 +27,8 @@
         </div>
       </div>
     </div>
-
-    <div class="cart-summary">
+  </div>
+      <div class="cart-summary">
       <h3>Order Summary</h3>
       <div class="summary-row">
         <span>Subtotal</span>
@@ -43,5 +44,4 @@
       </div>
       <button class="checkout-btn">Proceed to Checkout</button>
     </div>
-  </div>
 </div>

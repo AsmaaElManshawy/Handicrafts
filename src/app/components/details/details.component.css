@@ -139,6 +139,9 @@ main .spinner-border {
 }
 
 @media (max-width: 768px) {
+  .container {
+    max-height: 200vh !important;
+  }
   main .row {
     flex-direction: column;
   }
@@ -151,7 +154,9 @@ main .spinner-border {
   main h2 {
     font-size: 2rem;
   }
-
+  .col-md-1 {
+    display: none;
+  }
   main h3 {
     font-size: 1.5rem;
   }
