@@ -3,21 +3,25 @@
   <button class="btn btn-primary my-3" [routerLink]="['/product',0]">Add product</button>
   <ng-container *ngIf="productList.length > 0; else nodata">
     <div class="row my-5">
-      <div class="col-12 col-md-6 px-1" *ngFor="let  p of productList ; let i = index">
+      <div class="col-12 col-lg-6 pe-lg-2" *ngFor="let  p of productList ; let i = index">
         <div class="card pe-2 mb-2">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-3">
               <img [src]="p.coverImage" class="img-fluid rounded-start" alt="{{p.name}}">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-9">
               <div class="card-body">
                 <h5 class="card-title">Name : {{p.name}}</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary text-capitalize">Category : {{p.category}}</h6>
-                <p class="card-text">Description : {{p.description}}</p>
+                <p class="card-text"> {{p.description}} </p>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>Price : {{p.price}} </span>
-                    <span>Quantity : {{p.quantity}}</span>
+                    <span>E.G.P {{p.price}} </span>
+                    <span class="text-success">In Stock: : {{p.quantity}}</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="seller"> Seller : {{ user.userName }}</span>
+                    <span class="text-warning"><i class="fas fa-star mx-2"></i></span> {{ p.rating }}
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center">
                     <button class="btn btn-success rounded col-5" [routerLink]="['/product',p.id]">Edit</button>
@@ -37,7 +41,7 @@
     </div>
   </ng-container>
   <ng-template #nodata>
-    <p class="text-danger h1 my-5">No products found.</p>
+    <p class="text-danger h1 my-5 text-capitalize">you have no product.</p>
   </ng-template>
 </div>
 
