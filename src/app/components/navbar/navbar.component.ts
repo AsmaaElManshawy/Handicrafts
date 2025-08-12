@@ -13,7 +13,7 @@ import { RouterLink, RouterLinkActive ,Router} from '@angular/router';
 export class NavbarComponent {
   constructor(private router: Router) {}
   @Input() isTransparent: boolean = false;
-  isUser:boolean = false;
+  isUser:boolean = true;
   isAdmin:boolean = false;
 
 
